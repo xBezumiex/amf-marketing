@@ -1,0 +1,102 @@
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	text-align: center;
+}
+
+form{
+	.row{
+		margin-bottom: 25px !important;
+		padding-bottom: 11px;
+	}
+	
+	@include media('<phone') {
+		.row{
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+			
+			div+div{
+				padding-top: 11px !important;
+			}
+			
+			input{
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}
+
+.custom-table.col2 .cell{
+	width: 36%;
+}
+.custom-table.col3 .cell{
+	width: 24%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+	@include animate(all, $animation-speed*2, ease);
+
+	display: block;
+	width: 100% !important;
+	background: none;
+	padding: 0 0 6px;
+	margin: 0;
+	border: 1px solid #bababa;
+	color: $brand-black;
+	border-width: 0 0 1px;
+	font-size: 16px;
+	box-shadow: none;
+	outline: none;
+
+	@include placeholder {
+		color: $brand-black;
+	}
+
+	&:focus{
+		border-color: $brand-light-yellow;
+
+		@include placeholder {
+			opacity: 0;
+		}
+	}
+}
+textarea{
+	height: 150px !important;
+	min-height: 36px;
+	max-height: 36px;
+	overflow: auto;
+	resize: none;
+	margin: 0 0 25px;
+
+	&:focus{
+		max-height: 150px;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'],
+textarea{
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+button,
+input[type='button']{
+	cursor: pointer;
+}

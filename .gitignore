@@ -1,0 +1,12 @@
+# Large media files (hosted on RuTube)
+video/
+
+# Archive
+old.zip
+
+# Sensitive data
+leads.xls
+
+# OS files
+.DS_Store
+Thumbs.db
