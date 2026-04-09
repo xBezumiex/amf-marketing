@@ -11037,4 +11037,283 @@ input[type='button'] {
   }
 }
 
+/* ===== Pain Points Section (2nd screen) ===== */
+.amf-problem-section {
+  background: #181818;
+  padding: 80px 0 90px;
+  border-top: 1px solid rgba(183,120,14,0.18);
+}
+
+.amf-pb-inner {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.amf-pb-left {
+  flex: 1 1 55%;
+  min-width: 0;
+}
+
+.amf-pb-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #f0f0f0;
+  line-height: 1.25;
+  margin: 0 0 36px;
+  text-transform: none;
+}
+
+.amf-pb-heading span {
+  color: #b7780e;
+}
+
+.amf-pb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.amf-pb-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #232323;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 16px 18px;
+  transition: border-color 0.25s, transform 0.2s;
+  cursor: default;
+}
+
+.amf-pb-card:hover {
+  border-color: rgba(183,120,14,0.5);
+  transform: translateY(-2px);
+  background: #272727;
+}
+
+.amf-pb-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(183,120,14,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b7780e;
+}
+
+.amf-pb-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.amf-pb-card strong {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f0f0f0;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.amf-pb-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: #999;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.amf-pb-list > li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.amf-pb-offer {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(183,120,14,0.08);
+  border: 1px solid rgba(183,120,14,0.25);
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.amf-pb-offer-line {
+  flex-shrink: 0;
+  width: 4px;
+  border-radius: 4px;
+  background: #b7780e;
+  align-self: stretch;
+  min-height: 40px;
+}
+
+.amf-pb-offer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #ddd;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.amf-pb-offer strong {
+  color: #b7780e;
+}
+
+.amf-pb-right {
+  flex: 1 1 40%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.amf-pb-visual {
+  width: 100%;
+  background: #232323;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 28px 24px 22px;
+  position: relative;
+}
+
+.amf-pb-chart-label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.amf-pb-bars {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  height: 160px;
+  padding: 0 4px;
+}
+
+.amf-pb-bar-wrap {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.amf-pb-bar {
+  width: 100%;
+  height: var(--h);
+  background: #3a3a3a;
+  border-radius: 6px 6px 2px 2px;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+.amf-pb-bar--grow {
+  background: #7a5210;
+}
+
+.amf-pb-bar--accent {
+  background: #b7780e;
+}
+
+.amf-pb-bar span {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  color: #888;
+  white-space: nowrap;
+}
+
+.amf-pb-sources {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.amf-pb-src {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: #888;
+}
+
+.amf-pb-stat {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  text-align: center;
+}
+
+.amf-pb-stat-num {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #b7780e;
+  line-height: 1;
+}
+
+.amf-pb-stat-txt {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .amf-pb-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .amf-pb-left,
+  .amf-pb-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .amf-pb-heading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .amf-pb-list {
+    grid-template-columns: 1fr;
+  }
+
+  .amf-pb-list > li:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .amf-problem-section {
+    padding: 50px 0 60px;
+  }
+
+  .amf-pb-heading {
+    font-size: 22px;
+  }
+
+  .amf-pb-stat-num {
+    font-size: 34px;
+  }
+}
+/* ===== End Pain Points Section ===== */
+
 
