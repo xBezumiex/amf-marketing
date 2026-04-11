@@ -11088,7 +11088,8 @@ input[type='button'] {
   margin: 0 0 36px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  gap: 16px;
+  align-items: stretch;
 }
 
 .amf-pb-card {
@@ -11101,6 +11102,8 @@ input[type='button'] {
   padding: 16px 18px;
   transition: border-color 0.25s, transform 0.2s;
   cursor: default;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .amf-pb-card:hover {
