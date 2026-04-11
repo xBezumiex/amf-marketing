@@ -11069,6 +11069,19 @@ input[type='button'] {
   color: #b7780e;
 }
 
+.amf-pb-subheading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #aaa;
+  line-height: 1.6;
+  margin: -20px 0 32px;
+}
+
+.amf-pb-subheading strong {
+  color: #b7780e;
+  font-weight: 700;
+}
+
 .amf-pb-list {
   list-style: none;
   padding: 0;
@@ -11135,6 +11148,23 @@ input[type='button'] {
   grid-column: 1 / -1;
 }
 
+.amf-pb-amplifier {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border-left: 3px solid rgba(183,120,14,0.4);
+  background: rgba(255,255,255,0.03);
+  border-radius: 0 6px 6px 0;
+}
+
+.amf-pb-amplifier strong {
+  color: #e8a020;
+  font-weight: 700;
+}
+
 .amf-pb-offer {
   display: flex;
   align-items: flex-start;
@@ -11187,10 +11217,20 @@ input[type='button'] {
 .amf-pb-chart-label {
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  color: #888;
+  color: #ccc;
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: 0.3px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.amf-pb-chart-label span {
+  display: block;
+  font-size: 11px;
+  color: #666;
+  font-weight: 400;
+  margin-top: 2px;
 }
 
 .amf-pb-bars {
