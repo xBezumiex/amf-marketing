@@ -11010,18 +11010,14 @@ input[type='button'] {
   margin: 0;
   padding: 16px 0 !important;
   border-top: 1px solid rgba(255,255,255,0.08);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
+  text-align: center;
 }
 
 .fot-row .col-md-6,
 .fot-row .col-md-4,
 .fot-row .col-md-2 {
   float: none;
-  width: auto;
+  width: 100%;
   padding: 0;
 }
 
