@@ -10375,7 +10375,7 @@ input[type='button'] {
 }
 
 #footer .map {
-  margin: 32px 11px 70px;
+  margin: 32px 11px 0;
   z-index: 5;
   height: 461px;
   overflow: hidden;
@@ -11001,13 +11001,16 @@ input[type='button'] {
 }
 
 .copyright{
-  margin-top:20px;
+  margin: 0;
+  font-size: 13px;
+  color: #888;
 }
 
 .fot-row{
-  margin-top: 0px;
-  padding-bottom: 0px!important;
-  margin-bottom: 27px;
+  margin-top: 0;
+  padding: 16px 0 8px !important;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 /* ============= Promo Video Section ============= */
