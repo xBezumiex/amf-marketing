@@ -11000,10 +11000,16 @@ input[type='button'] {
   cursor: pointer;
 }
 
+.fot-logo {
+  display: block;
+  margin: 0 auto 12px;
+}
+
 .copyright{
   margin: 0;
   font-size: 13px;
   color: #888;
+  text-align: center;
 }
 
 .fot-row{
