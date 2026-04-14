@@ -11274,8 +11274,8 @@ input[type='button'] {
   flex: 1 1 40%;
   min-width: 0;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   padding-top: 10px;
 }
 
@@ -11329,12 +11329,6 @@ input[type='button'] {
   letter-spacing: 0.3px;
 }
 
-.amf-pb-chart-row {
-  margin-top: 40px;
-  max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .amf-pb-visual {
   width: 100%;
