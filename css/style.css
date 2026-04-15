@@ -11221,7 +11221,7 @@ input[type='button'] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 16px;
 }
 
 .amf-pb-cta-btn {
@@ -11308,6 +11308,16 @@ input[type='button'] {
   margin-bottom: 20px;
 }
 
+.amf-pb-cta-block-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: #b7780e;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
 .amf-pb-cta-list {
   list-style: none;
   padding: 0;
@@ -11379,7 +11389,7 @@ input[type='button'] {
   display: flex;
   gap: 10px;
   align-items: flex-end;
-  height: 160px;
+  height: 120px;
   padding: 0 4px;
 }
 
@@ -11506,6 +11516,15 @@ input[type='button'] {
 
   .amf-pb-stat-num {
     font-size: 34px;
+  }
+
+  /* Reorder mobile elements: CTA → разбор → график */
+  .amf-pb-cta-block {
+    order: 1;
+  }
+
+  .amf-pb-visual {
+    order: 2;
   }
 }
 /* ===== End Pain Points Section ===== */
