@@ -3,13 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Title -->
-	<title>AMF-marketing — Digital и AI-агентство | SEO и GEO-продвижение, создание сайтов, маркетинг под ключ</title>
+	<title>АМФ-маркетинг - AI и digital-агентство | SEO и GEO-продвижение, создание сайтов, маркетинг под ключ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Meta tags -->
-	<meta name="robots" content="noindex, nofollow">
-	<meta name="description" content="AMF-marketing — digital-агентство полного цикла. SEO, GEO-продвижение в нейросетях, сайты, AI-агенты, дизайн и реклама под ключ">
-	<meta name="keywords" content="AMF-marketing, digital агентство, AI-агентство, GEO-продвижение, продвижение в нейросетях, SEO, создание сайтов, разработка сайтов, дизайн, реклама, автоматизация бизнеса, ИИ-агенты, чат-боты, маркетинг под ключ, Новосибирск, digital маркетинг, продвижение бренда">
+	<meta name="description" content="АМФ-маркетинг — digital-агентство полного цикла. SEO, GEO-продвижение в нейросетях, сайты, AI-агенты, дизайн и реклама под ключ">
+	<meta name="keywords" content="АМФ-маркетинг, digital агентство, AI-агентство, GEO-продвижение, продвижение в нейросетях, SEO, создание сайтов, разработка сайтов, дизайн, реклама, автоматизация бизнеса, ИИ-агенты, чат-боты, маркетинг под ключ, Новосибирск, digital маркетинг, продвижение бренда">
 	<meta name="author" content="">
 
 	<!-- Custom fonts -->
@@ -88,8 +87,48 @@ var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 })(window,document,'https://cdn.bitrix24.ru/b6382581/crm/tag/call.tracker.js');
 </script>
+<style>
+.form-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60px);
+    background: #fff;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+    z-index: 9999;
+    font-family: 'Raleway', sans-serif;
+    min-width: 280px;
+    text-align: center;
+}
+
+.form-toast--success { border-left: 4px solid #37c47a; }
+.form-toast--error   { border-left: 4px solid #e74c3c; }
+
+.form-toast--show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+}
+	
+.form-hp { 
+    position: absolute; 
+    left: -9999px; 
+    opacity: 0; 
+    pointer-events: none; 
+    tab-index: -1;
+}
+</style>
 </head>
 <body>
+	<div id="form-toast" class="form-toast">
+    	<span class="form-toast__text"></span>
+	</div>
 	<div id="wrapper">
 		<!-- Header -->
 		<header id="header">
@@ -120,7 +159,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 		<section class="intro frame-box">
 			<div class="container">
 				<h1>Жарим <span>с гарантией</span></h1>
-				<p class="desc-title">Приходи и проверь!</p>
+				<p class="desc-title">50+ проектов. Работаем с 2018</p>
 			</div>
 			<div class="media-holder">
 				<img src="images/bg2.png" alt="">
@@ -128,11 +167,9 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 			<span class="anchor" id="intro"></span>
 		</section>
 
-		<!-- Pain Points Section -->
+				<!-- Pain Points Section -->
 		<section class="section amf-problem-section" id="pain-points">
 		  <div class="container">
-
-		    <!-- Заголовок на всю ширину -->
 		    <div class="amf-pb-header">
 		      <h2 class="amf-pb-heading">
 		        Вы теряете клиентов каждый день,<br><span>даже если хорошо работаете</span>
@@ -141,98 +178,41 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 		        <p class="amf-pb-subheading">Проблема не в качестве услуг — а в том, что вас не находят в <strong>Яндексе</strong>, <strong>2GIS</strong> и <strong>AI</strong></p>
 		      </div>
 		    </div>
-
 		    <div class="amf-pb-inner">
-
-		      <!-- ЛЕВАЯ КОЛОНКА -->
 		      <div class="amf-pb-left">
-
 		        <ul class="amf-pb-list">
 		          <li class="amf-pb-card">
-		            <div class="amf-pb-icon">
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		              </svg>
-		            </div>
-		            <div>
-		              <strong>Заявки идут нестабильно</strong>
-		              <p>Вы не контролируете загрузку бизнеса — то пусто, то густо</p>
-		            </div>
+		            <div class="amf-pb-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+		            <div><strong>Заявки идут нестабильно</strong><p>Вы не контролируете загрузку бизнеса — то пусто, то густо</p></div>
 		          </li>
 		          <li class="amf-pb-card">
-		            <div class="amf-pb-icon">
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-		                <line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-		                <line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-		              </svg>
-		            </div>
-		            <div>
-		              <strong>Вы платите за рекламу, но заявок больше не становится</strong>
-		              <p>Бюджет уходит, а реального роста клиентов нет</p>
-		            </div>
+		            <div class="amf-pb-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+		            <div><strong>Вы платите за рекламу, но заявок больше не становится</strong><p>Бюджет уходит, а реального роста клиентов нет</p></div>
 		          </li>
 		          <li class="amf-pb-card">
-		            <div class="amf-pb-icon">
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
-		                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-		              </svg>
-		            </div>
-		            <div>
-		              <strong>Вас нет там, где ищут клиенты</strong>
-		              <p>Вы не в топе Яндекса и 2GIS — клиенты находят конкурентов</p>
-		            </div>
+		            <div class="amf-pb-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+		            <div><strong>Вас нет там, где ищут клиенты</strong><p>Вы не в топе Яндекса и 2GIS — клиенты находят конкурентов</p></div>
 		          </li>
 		          <li class="amf-pb-card">
-		            <div class="amf-pb-icon">
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
-		                <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		              </svg>
-		            </div>
-		            <div>
-		              <strong>Пока вы работаете, клиенты уходят к другим</strong>
-		              <p>Они выбирают тех, кого увидели первыми</p>
-		            </div>
+		            <div class="amf-pb-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+		            <div><strong>Пока вы работаете, клиенты уходят к другим</strong><p>Они выбирают тех, кого увидели первыми</p></div>
 		          </li>
 		          <li class="amf-pb-card">
-		            <div class="amf-pb-icon">
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-		                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		              </svg>
-		            </div>
-		            <div>
-		              <strong>Сарафан — единственный источник</strong>
-		              <p>Вы зависите от случайности, а не от системы</p>
-		            </div>
+		            <div class="amf-pb-icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+		            <div><strong>Сарафан — единственный источник</strong><p>Вы зависите от случайности, а не от системы</p></div>
 		          </li>
 		        </ul>
-
-		        <!-- Усиливающая строка -->
-		        <div class="amf-pb-amplifier">
-		          Каждый день без системы — это <strong>потерянные заявки</strong> и <strong>недополученная выручка</strong>
-		        </div>
-
-		        <!-- Микро-оффер -->
+		        <div class="amf-pb-amplifier">Каждый день без системы — это <strong>потерянные заявки</strong> и <strong>недополученная выручка</strong></div>
 		        <div class="amf-pb-offer">
 		          <div class="amf-pb-offer-line"></div>
 		          <p>Настраиваем систему, которая стабильно приводит заявки из <strong>Яндекса</strong>, <strong>2GIS</strong> и <strong>AI</strong> — без зависимости от сарафана</p>
 		        </div>
-
-		        <!-- CTA -->
 		        <div class="amf-pb-cta">
 		          <a href="#contact-us" class="amf-pb-cta-btn">Разобрать мой бизнес</a>
 		          <p class="amf-pb-cta-sub">Покажем, где вы теряете клиентов — за 15 минут</p>
 		        </div>
-
 		      </div>
-
-		      <!-- ПРАВАЯ КОЛОНКА — график + CTA блок -->
 		      <div class="amf-pb-right">
-
 		        <div class="amf-pb-visual">
 		          <div class="amf-pb-chart-label">Рост заявок после внедрения системы<br><span>на основе реальных проектов клиентов</span></div>
 		          <div class="amf-pb-bars">
@@ -253,29 +233,17 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 		            <div class="amf-pb-stat-txt">заявок в среднем за 3 месяца</div>
 		          </div>
 		        </div>
-
 		        <div class="amf-pb-cta-block">
 		          <div class="amf-pb-cta-block-subtitle">После нажатия на кнопку вы получите:</div>
 		          <div class="amf-pb-cta-block-title">Разбор покажет:</div>
 		          <ul class="amf-pb-cta-list">
-		            <li>
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#b7780e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke="#b7780e" stroke-width="2"/></svg>
-		              <span>Где вы теряете клиентов прямо сейчас</span>
-		            </li>
-		            <li>
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="#b7780e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-		              <span>Сколько заявок вы можете получать</span>
-		            </li>
-		            <li>
-		              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#b7780e" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="#b7780e" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="#b7780e" stroke-width="2" stroke-linecap="round"/></svg>
-		              <span>Какие каналы не работают и почему</span>
-		            </li>
+		            <li><svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#b7780e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke="#b7780e" stroke-width="2"/></svg><span>Где вы теряете клиентов прямо сейчас</span></li>
+		            <li><svg viewBox="0 0 24 24" fill="none" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="#b7780e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Сколько заявок вы можете получать</span></li>
+		            <li><svg viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="12" cy="12" r="10" stroke="#b7780e" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="12" stroke="#b7780e" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="16" x2="12.01" y2="16" stroke="#b7780e" stroke-width="2" stroke-linecap="round"/></svg><span>Какие каналы не работают и почему</span></li>
 		          </ul>
 		          <div class="amf-pb-cta-block-note">Бесплатно · Без обязательств · 15 минут</div>
 		        </div>
-
 		      </div>
-
 		    </div>
 		  </div>
 		  <span class="anchor" id="pain"></span>
@@ -587,27 +555,27 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 			</div>
 			<span class="anchor" id="portfolio"></span>
 		</section>
-
 		<!-- Promo Video -->
-		<section class="section promo-video-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 col-xs-12">
-						<h2>Смотри <span>как это работает</span></h2>
-						<div class="embed-responsive embed-responsive-16by9 promo-video-frame">
-							<iframe class="embed-responsive-item"
-								src="https://vkvideo.ru/video_ext.php?oid=-158771644&id=456239021&hash=639c046babd0dec3&hd=3"
-								allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-								frameborder="0"
-								allowfullscreen>
-							</iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-			<span class="anchor" id="promo-video"></span>
-		</section>
+<section class="section promo-video-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-xs-12">
+        <h2>Смотри <span>как это работает</span></h2>
 
+        <div class="embed-responsive embed-responsive-16by9 promo-video-frame">
+          <iframe
+            class="embed-responsive-item"
+            src="https://vkvideo.ru/video_ext.php?oid=-158771644&id=456239021&hash=639c046babd0dec3&hd=3"
+            frameborder="0"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 		<!-- Our history -->
 		<section class="section screen02 frame-box">
 			<div class="container twocolumns">
@@ -695,11 +663,6 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 									<p class="social-networks">
 										Основатель креативного агентства. Специалист в масштабировании бизнесов.
 									</p>
-									<!-- <ul class="social-networks">
-										<li><a href="#"><span class="icon-facebook"></span></a></li>
-										<li><a href="#"><span class="icon-twitter"></span></a></li>
-										<li><a href="#"><span class="icon-linkedin"></span></a></li>
-									</ul> -->
 								</div>
 							</div>
 							<h3>Артур Усенко</h3>
@@ -802,36 +765,87 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 		</section>
 
 		<!-- Contact Us -->
-		<section class="section">
-			<div class="container">
-				<h2>Хочешь узнать <span> больше прямо сейчас?</span></h2>
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<form action="mail.php" method="post">
-							<fieldset>
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" placeholder="Имя" name="name">
-									</div>
-									<div class="col-sm-6">
-										<input type="email" placeholder="E-mail" name="email" required="required">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<input type="text" placeholder="Вопрос" name="message">
-									</div>
-								</div>
-								<button name="sendmessage" type="submit" class="btn" onsubmit="yaCounter48341462.reachGoal('form-but');
- return true;"><span>Задай вопрос</span></button>
-								<p class="form-privacy">Нажимая кнопку, вы соглашаетесь с <a href="#" data-toggle="modal" data-target="#privacy-modal">политикой конфиденциальности</a></p>
-							</fieldset>
-						</form>
-					</div>
-				</div>
+<section class="section">
+	<div class="container">
+		<h2>Хочешь узнать <span> больше прямо сейчас?</span></h2>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+
+				<form action="mail.php" method="post"
+      				onsubmit="try{yaCounter48341462.reachGoal('form-but');}catch(err){}">
+
+					<fieldset>
+						<input class="form-hp" type="text" name="website" tabindex="-1" autocomplete="off">
+						<input type="hidden" name="form_time" id="form_time_main">
+
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="text" name="name" placeholder="Имя" required>
+							</div>
+
+							<div class="col-sm-6">
+								<input type="email" name="email" placeholder="E-mail" required>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea name="message" placeholder="Вопрос" rows="4" required></textarea>
+							</div>
+						</div>
+
+						<button type="submit" class="btn">
+							<span>Задай вопрос</span>
+						</button>
+
+					</fieldset>
+				</form>
+
 			</div>
-			<span class="anchor" id="contact-us"></span>
-		</section>
+		</div>
+	</div>
+
+	<span class="anchor" id="contact-us"></span>
+</section>
+		
+		<!-- Game Section -->
+<section class="section frame-box" id="game-section" style="background: #1c1c1c;">
+    <div class="container" id="game-container" style="transition: max-width 0.5s ease;">
+        <h2>Немного <span>отдохнем?</span></h2>
+        <p style="text-align: center; margin-bottom: 30px; font-size: 18px;">Помоги кролику собрать морковки и получи скидку!</p>
+
+        <div id="game-wrapper" style="position: relative; max-width: 1000px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; background: #1c1c1c; transition: max-width 0.5s ease;">
+            <canvas id="gameCanvas" width="800" height="350" style="width: 100%; height: auto;"></canvas>
+
+            <div id="game-ui" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.88); text-align: center; padding: 20px 16px; width: 100%; box-sizing: border-box;">
+                <h3 id="game-title" style="font-family: 'Pacifico', cursive; font-size: 28px; color: #fff; margin-bottom: 16px; text-transform: none;">Морковный забег</h3>
+
+                <!-- Блок результатов -->
+                <div id="game-results" style="display:none; margin-bottom: 14px;">
+                    <p style="font-size: 17px; margin: 0; color: #fff;">Собрано: <strong style="color: #e67e22;" id="final-carrots">0</strong> 🥕</p>
+                    <p style="font-size: 19px; margin: 5px 0 0 0; font-weight: bold; color: #27ae60;" id="promo-result">🎁 5%</p>
+                    <button id="copy-promo-btn" style="margin-top:10px; background:#b7780e; color:#fff; border:none; border-radius:6px; padding:7px 18px; font-size:14px; cursor:pointer; display:none;">Скопировать промокод</button>
+                    <p id="copy-promo-hint" style="font-size:12px; color:#aaa; margin:4px 0 0 0; display:none;">Нажмите на промокод или кнопку, чтобы скопировать</p>
+                </div>
+
+                <!-- Блок правил -->
+                <div id="game-rules" style="font-size: 14px; color: #ccc; margin-bottom: 16px; line-height: 1.5; background: rgba(255,255,255,0.08); padding: 10px 16px; border-radius: 8px; max-width: 320px;">
+                    <strong style="color:#fff;">Как играть?</strong><br>
+                    Кликайте или жмите пробел, чтобы прыгать.<br>
+                    <span style="display:inline-block; margin-top:6px; font-weight:bold; color:#fff;">
+                        12+ 🥕 — скидка 20% <br>
+                        6+ 🥕 — скидка 10% <br>
+                        Меньше 6 — скидка 5%
+                    </span>
+                </div>
+
+                <button id="start-btn" class="btn" style="border:none;"><span>Загрузка...</span></button>
+            </div>
+        </div>
+    </div>
+    <span class="anchor" id="game"></span>
+</section>
 
 		<!-- footer -->
 		<footer id="footer" class="section frame-box">
@@ -840,7 +854,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 					<div class="col-lg-3 col-md-3">
 						<i class="icon-phone"></i>
 						<div class="holder">
-							<a href="tel:+79137695672">+7 (383) 212‒81‒89</a>				
+							<a href="tel:+79231128754">+7 923 112‒87‒54</a>				
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3">
@@ -852,7 +866,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 					<div class="col-lg-3 col-md-3">
 						<i class="icon-global"></i>
 						<div class="holder">
-							<a href="mailto:amediafactor@gmail.com">amediafactor@gmail.com</a>
+							<a href="mailto:a.usenko@amf-marketing.ru">a.usenko@amf-marketing.ru</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3">
@@ -872,10 +886,15 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 			</div>
 			<div class="container">
 				<div class="row fot-row">
-					<div class="col-md-12">
-						<img src="images/logo4.png" alt="logo" class="fot-logo">
-						<p class="copyright">&copy; Copyright 2018-2026 - AMF-marketing &nbsp;·&nbsp; <a href="#" data-toggle="modal" data-target="#privacy-modal" style="color:#888; text-decoration:none;">Политика конфиденциальности</a></p>
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="copyright">&copy; Copyright 2018-2026 - АМФ-маркетинг</p>
 					</div>
+					<div class="col-md-4">
+						
+					</div>
+					<div class="col-md-2 d-flex justify-content-end">
+						<img src="images/logo4.png" alt="logo">
+					</div>				
 				</div>
 			</div>
 		</footer>
@@ -910,6 +929,8 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 					<div class="col-md-8 col-md-offset-2">
 						<form action="mail.php" method="post">
 							<fieldset>
+								<input class="form-hp" type="text" name="website" tabindex="-1" autocomplete="off">
+								<input type="hidden" name="form_time" id="form_time_modal">
 								<!-- add <data-dismiss="modal"> -->
 								<div class="row">
 									<div class="col-md-6">
@@ -924,9 +945,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 										<input type="text" placeholder="Вопрос" name="message">
 									</div>
 								</div>
-								<button name="sendmessage" type="submit" class="btn" onsubmit="yaCounter48341462.reachGoal('form-but', function () {
-alert('Данные успешно отправлены');
-}, <Контекст, доступный по ключевому слову this внутри callback-функции>); return true;" data-toggle="modal" data-target="#prices_plan"><span>Отправить</span></button>
+								<button name="sendmessage" type="submit" class="btn" onclick="try{yaCounter48341462.reachGoal('form-but');}catch(e){}"><span>Отправить</span></button>
 							</fieldset>
 						</form>
 					</div>
@@ -936,8 +955,63 @@ alert('Данные успешно отправлены');
 	</div>
 
 	<!-- jQuery -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/aj#header.fixed .drop-downax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+	
+	<script>
+	$(function () {
+    function showToast(message, type) {
+        var $toast = $('#form-toast');
+        $toast.removeClass('form-toast--success form-toast--error');
+        if (type === 'success') $toast.addClass('form-toast--success');
+        if (type === 'error')   $toast.addClass('form-toast--error');
+        $toast.find('.form-toast__text').text(message);
+        $toast.addClass('form-toast--show');
+        setTimeout(function () {
+            $toast.removeClass('form-toast--show');
+        }, 4000);
+    }
+
+    var pageLoadTime = Date.now();
+
+    $('#form_time_main').val(pageLoadTime);
+    $('#form_time_modal').val(pageLoadTime);
+
+    $('form[action="mail.php"]').on('submit', function (e) {
+        e.preventDefault();
+        var $form = $(this);
+
+        if ($form.find('input[name="website"]').val() !== '') {
+            showToast('Спасибо!', 'success');
+            return;
+        }
+
+        var formTime = parseInt($form.find('input[name="form_time"]').val(), 10);
+        if (!formTime || (Date.now() - formTime) < 3000) {
+            showToast('Пожалуйста, заполните форму внимательно', 'error');
+            return;
+        }
+
+        $.ajax({
+            url: $form.attr('action'),
+            method: 'POST',
+            data: $form.serialize(),
+            dataType: 'json',
+            success: function (res) {
+                if (res.success) {
+                    showToast(res.message || 'Спасибо, заявка отправлена', 'success');
+                    $form[0].reset();
+                } else {
+                    showToast(res.message || 'Ошибка отправки', 'error');
+                }
+            },
+            error: function () {
+                showToast('Ошибка соединения с сервером', 'error');
+            }
+        });
+    });
+});
+	</script>
 
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
@@ -956,45 +1030,348 @@ alert('Данные успешно отправлены');
 
 	<!-- Custom JS -->
 	<script src="js/jquery.main.min.js"></script>
+	
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const canvas = document.getElementById('gameCanvas');
+    if (!canvas) return; 
+    
+    const ctx = canvas.getContext('2d');
+    const startBtn = document.getElementById('start-btn');
+    const gameUi = document.getElementById('game-ui');
+    const gameTitle = document.getElementById('game-title');
+    const gameWrapper = document.getElementById('game-wrapper');
+    const gameContainer = document.getElementById('game-container');
+    const gameSection = document.getElementById('game-section');
+    
+    const resultsBlock = document.getElementById('game-results');
+    const finalCarrotsSpan = document.getElementById('final-carrots');
+    const promoResultSpan = document.getElementById('promo-result');
+	
+    startBtn.style.opacity = '0.5';
+    startBtn.style.pointerEvents = 'none';
 
-	<!-- Modal Privacy Policy -->
-	<div class="modal fade" id="privacy-modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Политика конфиденциальности</h4>
-				</div>
-				<div class="modal-body" style="max-height:70vh; overflow-y:auto; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.7; color:#ccc;">
-					<p><strong>1. Общие положения</strong><br>
-					Настоящая политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта amf-marketing.ru (далее — Сайт), оператором которого является ООО «АМФ-маркетинг».</p>
+    const imgSources = {
+        run: 'images/game/bunny_run.webp',
+        jump: 'images/game/bunny_jump.webp',
+        obstacle: 'images/game/obstacle.webp',
+        carrot: 'images/carrot.png'
+    };
 
-					<p><strong>2. Какие данные мы собираем</strong><br>
-					При заполнении форм на Сайте мы получаем: имя, адрес электронной почты, номер телефона (если указан), текст обращения. Данные передаются добровольно самим пользователем.</p>
+    const images = {};
+    let loadedCount = 0;
+    let hasError = false;
 
-					<p><strong>3. Цели обработки данных</strong><br>
-					Персональные данные используются исключительно для: обратной связи с пользователем, подготовки коммерческих предложений, улучшения качества сервиса. Данные не передаются третьим лицам без согласия пользователя.</p>
+    for (let key in imgSources) {
+        images[key] = new Image();
+        images[key].onload = function() {
+            loadedCount++;
+            if (loadedCount === Object.keys(imgSources).length && !hasError) {
+                startBtn.style.opacity = '1';
+                startBtn.style.pointerEvents = 'auto';
+                startBtn.querySelector('span').innerText = 'Начать игру';
+            }
+        };
+        images[key].onerror = function() {
+            hasError = true;
+            console.error(`Ошибка загрузки: ${imgSources[key]}`);
+            gameTitle.innerText = 'Ошибка загрузки';
+            startBtn.querySelector('span').innerText = 'Проверьте пути';
+        };
+        images[key].src = imgSources[key];
+    }
 
-					<p><strong>4. Хранение и защита данных</strong><br>
-					Мы принимаем необходимые технические и организационные меры для защиты ваших данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+    let isPlaying = false;
+    let isTransitioning = false; 
+    let carrotsCollected = 0;
+    let frames = 0;
+    let obstacles = [];
+    let carrotsArr = [];
+    
+    let gameSpeed = 1.5; 
 
-					<p><strong>5. Использование cookies</strong><br>
-					Сайт использует файлы cookies для улучшения работы и сбора статистики (Яндекс.Метрика, Google Analytics). Вы можете отключить cookies в настройках браузера.</p>
+    // Настройки персонажа
+    const bunny = {
+        x: 50, y: 190, w: 80, h: 70,
+        dy: 0, 
+        jumpPower: -12, 
+        gravity: 0.25,     
+        grounded: true,
+        frameX: 0, 
+        maxFrames: 4, 
+        frameTimer: 0, 
+        frameInterval: 10,
 
-					<p><strong>6. Права пользователя</strong><br>
-					Вы вправе в любой момент запросить удаление, изменение или уточнение ваших персональных данных, направив обращение на: <a href="mailto:a.usenko@amf-marketing.ru">a.usenko@amf-marketing.ru</a></p>
+        jump() {
+            if (this.grounded) {
+                this.dy = this.jumpPower;
+                this.grounded = false;
+            }
+        },
+		
+        update() {
+            this.y += this.dy;
+            if (this.y < 0) { this.y = 0; this.dy = 0; }
+            // Земля 260, вычитаем высоту кролика
+            if (this.y + this.h < 260) {
+                this.dy += this.gravity;
+                this.grounded = false;
+            } else {
+                this.dy = 0;
+                this.grounded = true;
+                this.y = 260 - this.h;
+            }
 
-					<p><strong>7. Изменения политики</strong><br>
-					Мы оставляем за собой право вносить изменения в настоящую политику. Актуальная версия всегда доступна на данной странице.</p>
+            if (this.grounded) {
+                this.frameTimer++;
+                if (this.frameTimer >= this.frameInterval) {
+                    this.frameX++;
+                    if (this.frameX >= this.maxFrames) this.frameX = 0;
+                    this.frameTimer = 0;
+                }
+            } else {
+                this.frameX = 0; 
+            }
+        },
+		
+        draw() {
+            ctx.save();
+            
+            if (this.grounded) {
+                const frameWidth = images.run.width / this.maxFrames;
+                const frameHeight = images.run.height;
+                
+                // Пропорциональная отрисовка конкретного кадра
+                ctx.drawImage(
+                    images.run, 
+                    this.frameX * frameWidth, 0, frameWidth, frameHeight, 
+                    this.x, this.y, this.w, this.h
+                );
+            } else {
+                ctx.drawImage(images.jump, this.x, this.y, this.w, this.h);
+            }
+            ctx.restore();
+        }
+    };
 
-					<p style="color:#666; font-size:13px;">Дата последнего обновления: апрель 2026 г.</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-				</div>
-			</div>
-		</div>
-	</div>
+    function handleJump(e) {
+        if(e.type === 'touchstart') e.preventDefault();
+        if (isPlaying && !isTransitioning) bunny.jump();
+    }
+	
+	let blockScroll = false; // флаг блокировки скролла
+    
+    window.addEventListener('keydown', (e) => {
+		if (e.code === 'Space' || e.code === 'ArrowUp') {
+			if (blockScroll) {
+				e.preventDefault();
+				e.stopPropagation();
+			}
+			if (isPlaying && !isTransitioning) bunny.jump();
+		}
+	}, { capture: true });
+
+    canvas.addEventListener('mousedown', handleJump);
+    canvas.addEventListener('touchstart', handleJump, {passive: false});
+
+
+    function drawBackground() {
+        let bgGradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        bgGradient.addColorStop(0, '#1c1c1c'); // Темный цвет сайта
+        bgGradient.addColorStop(1, '#3a2a18'); // Легкий коричнево-оранжевый оттенок
+        
+        ctx.fillStyle = bgGradient;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // Земля
+        ctx.fillStyle = '#2c2c2c'; // Темная земля
+        ctx.fillRect(0, 260, canvas.width, canvas.height - 260);
+        ctx.fillStyle = '#b7780e'; // Оранжевая полоска сверху земли
+        ctx.fillRect(0, 260, canvas.width, 3);
+    }
+
+    startBtn.addEventListener('click', () => {
+        if (loadedCount < Object.keys(imgSources).length) return; 
+		
+		canvas.style.display = 'block';        
+        gameWrapper.style.maxWidth = '100%';
+        gameContainer.style.width = '100%';
+        gameContainer.style.maxWidth = '100%';
+        gameContainer.style.padding = '0';
+        
+        gameWrapper.classList.remove('is-over');
+		gameWrapper.classList.add('is-playing');
+		blockScroll = true;
+        
+        bunny.y = 260 - bunny.h;
+        bunny.dy = 0;
+        bunny.grounded = true;
+        obstacles = [];
+        carrotsArr = [];
+        carrotsCollected = 0;
+        frames = 0;
+        gameSpeed = 1.5;
+        document.getElementById('copy-promo-btn').style.display = 'none';
+        document.getElementById('copy-promo-hint').style.display = 'none';
+        
+        isTransitioning = true;
+        isPlaying = true;
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawBackground();
+        bunny.draw();
+
+        setTimeout(() => {
+            gameTitle.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+
+        setTimeout(() => {
+            isTransitioning = false;
+            requestAnimationFrame(loop);
+        }, 500);
+    });
+
+    function loop() {
+        if (!isPlaying) return;
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawBackground();
+        
+        bunny.update();
+        bunny.draw();
+        
+        if (frames > 0 && frames % 500 === 0) {
+            gameSpeed += 0.2;
+        }
+
+        let spawnRate = Math.floor(Math.max(140, 250 - (gameSpeed * 10)));
+
+        if (frames > 80 && frames % spawnRate === 0) {
+            // Камни
+            obstacles.push({ x: canvas.width, y: 204, w: 55, h: 56 });
+        }
+        
+        for (let i = 0; i < obstacles.length; i++) {
+            let obs = obstacles[i];
+            obs.x -= gameSpeed;
+            ctx.drawImage(images.obstacle, obs.x, obs.y, obs.w, obs.h);
+            
+
+            // Столкновение засчитывается, только если кролик вошел в камень
+            // Убираем по 35 пикселей с ширины и по 20 с высоты
+            if (bunny.x < obs.x + obs.w - 35 && 
+                bunny.x + bunny.w - 35 > obs.x &&
+                bunny.y < obs.y + obs.h - 20 && 
+                bunny.y + bunny.h - 20 > obs.y) {
+                isPlaying = false;
+                gameOver();
+            }
+        }
+        
+        if (frames > 80 && frames % Math.floor(spawnRate - 50) === 0 && frames % spawnRate !== 0) {
+            let carrotY = Math.random() > 0.5 ? 210 : 120; 
+            carrotsArr.push({ x: canvas.width, y: carrotY, w: 50, h: 50 });
+        }
+        
+        for (let i = 0; i < carrotsArr.length; i++) {
+            let car = carrotsArr[i];
+            car.x -= gameSpeed;
+            ctx.drawImage(images.carrot, car.x, car.y, car.w, car.h);
+            
+            if (bunny.x < car.x + car.w && bunny.x + bunny.w > car.x &&
+                bunny.y < car.y + car.h && bunny.y + bunny.h > car.y) {
+                carrotsCollected++;
+                carrotsArr.splice(i, 1);
+                i--;
+            }
+        }
+        
+        obstacles = obstacles.filter(obs => obs.x + obs.w > 0);
+        carrotsArr = carrotsArr.filter(car => car.x + car.w > 0);
+        
+        // Отрисовка счета
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 24px Raleway';
+        ctx.fillText(`🥕 ${carrotsCollected}`, 20, 35);
+        
+        frames++;
+        requestAnimationFrame(loop);
+    }
+
+    function gameOver() {
+		
+        gameWrapper.classList.remove('is-playing');
+		gameWrapper.classList.add('is-over');
+		canvas.style.display = 'none';
+        
+        gameTitle.innerText = 'Предыдущая попытка';
+        
+        resultsBlock.style.display = 'block';
+        resultsBlock.querySelector('p').style.color = '#fff';
+        finalCarrotsSpan.innerText = carrotsCollected;
+
+        let promoCode;
+        if (carrotsCollected >= 12) {
+            promoCode = 'RUN20';
+            promoResultSpan.innerHTML = '🎁 20% — <strong style="color:#e74c3c;cursor:pointer;text-decoration:underline dotted;" title="Нажмите, чтобы скопировать">RUN20</strong>';
+        } else if (carrotsCollected >= 6) {
+            promoCode = 'RUN10';
+            promoResultSpan.innerHTML = '🎁 10% — <strong style="color:#f39c12;cursor:pointer;text-decoration:underline dotted;" title="Нажмите, чтобы скопировать">RUN10</strong>';
+        } else {
+            promoCode = 'RUN5';
+            promoResultSpan.innerHTML = '🎁 5% — <strong style="color:#27ae60;cursor:pointer;text-decoration:underline dotted;" title="Нажмите, чтобы скопировать">RUN5</strong>';
+        }
+
+        const copyPromoBtn = document.getElementById('copy-promo-btn');
+        const copyPromoHint = document.getElementById('copy-promo-hint');
+        copyPromoBtn.style.display = 'inline-block';
+        copyPromoHint.style.display = 'block';
+
+        function copyPromo() {
+            navigator.clipboard.writeText(promoCode).then(() => {
+                copyPromoBtn.textContent = '✅ Скопировано!';
+                promoResultSpan.querySelector('strong').textContent = promoCode + ' ✅';
+                setTimeout(() => {
+                    copyPromoBtn.textContent = 'Скопировать промокод';
+                    promoResultSpan.querySelector('strong').textContent = promoCode;
+                }, 2000);
+            }).catch(() => {
+                const el = document.createElement('textarea');
+                el.value = promoCode;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                copyPromoBtn.textContent = '✅ Скопировано!';
+                setTimeout(() => { copyPromoBtn.textContent = 'Скопировать промокод'; }, 2000);
+            });
+        }
+
+        copyPromoBtn.onclick = copyPromo;
+        promoResultSpan.onclick = copyPromo;
+        promoResultSpan.style.cursor = 'pointer';
+
+        startBtn.querySelector('span').innerText = 'Играть снова';
+		blockScroll = false;
+    }
+
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting && !isPlaying && gameWrapper.style.maxWidth === '100%') {
+                gameWrapper.style.maxWidth = '1000px';
+                gameContainer.style.width = '';
+                gameContainer.style.maxWidth = '';
+                gameContainer.style.padding = '';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    if (gameSection) {
+        observer.observe(gameSection);
+    }
+});
+</script>
+
 
 </body>
 </html>
