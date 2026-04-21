@@ -1108,7 +1108,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.grounded) {
                 this.dy = this.jumpPower;
                 this.grounded = false;
-                this.jumpTimer = 10;
+                this.jumpTimer = 15;
             }
         },
 		
@@ -1253,7 +1253,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (frames > 80 && frames % spawnRate === 0) {
             // Камни
-            obstacles.push({ x: canvas.width, y: 204, w: 55, h: 56 });
+            obstacles.push({ x: canvas.width, y: 218, w: 50, h: 42 });
         }
         
         for (let i = 0; i < obstacles.length; i++) {
@@ -1263,10 +1263,10 @@ document.addEventListener("DOMContentLoaded", function() {
             
 
             if (bunny.jumpTimer <= 0 &&
-                bunny.x < obs.x + obs.w - 18 &&
-                bunny.x + bunny.w - 45 > obs.x &&
-                bunny.y < obs.y + obs.h - 12 &&
-                bunny.y + bunny.h - 20 > obs.y + 15) {
+                bunny.x + 5 < obs.x + obs.w - 5 &&
+                bunny.x + bunny.w - 50 > obs.x + 5 &&
+                bunny.y + 5 < obs.y + obs.h &&
+                bunny.y + bunny.h - 25 > obs.y + 12) {
                 isPlaying = false;
                 gameOver();
             }
