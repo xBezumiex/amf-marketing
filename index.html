@@ -1102,14 +1102,18 @@ document.addEventListener("DOMContentLoaded", function() {
         frameTimer: 0, 
         frameInterval: 10,
 
+        jumpTimer: 0,
+
         jump() {
             if (this.grounded) {
                 this.dy = this.jumpPower;
                 this.grounded = false;
+                this.jumpTimer = 10;
             }
         },
 		
         update() {
+            if (this.jumpTimer > 0) this.jumpTimer--;
             this.y += this.dy;
             if (this.y < 0) { this.y = 0; this.dy = 0; }
             // Земля 260, вычитаем высоту кролика
@@ -1206,6 +1210,7 @@ document.addEventListener("DOMContentLoaded", function() {
         bunny.y = 260 - bunny.h;
         bunny.dy = 0;
         bunny.grounded = true;
+        bunny.jumpTimer = 0;
         obstacles = [];
         carrotsArr = [];
         carrotsCollected = 0;
@@ -1257,7 +1262,8 @@ document.addEventListener("DOMContentLoaded", function() {
             ctx.drawImage(images.obstacle, obs.x, obs.y, obs.w, obs.h);
             
 
-            if (bunny.x < obs.x + obs.w - 18 &&
+            if (bunny.jumpTimer <= 0 &&
+                bunny.x < obs.x + obs.w - 18 &&
                 bunny.x + bunny.w - 45 > obs.x &&
                 bunny.y < obs.y + obs.h - 12 &&
                 bunny.y + bunny.h - 20 > obs.y + 15) {
