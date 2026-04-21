@@ -816,7 +816,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         <p style="text-align: center; margin-bottom: 30px; font-size: 18px;">Помоги кролику собрать морковки и получи скидку!</p>
 
         <div id="game-wrapper" style="position: relative; max-width: 1000px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden; background: #1c1c1c; transition: max-width 0.5s ease;">
-            <canvas id="gameCanvas" width="800" height="350" style="width: 100%; height: auto; display: none;"></canvas>
+            <canvas id="gameCanvas" width="800" height="420" style="width: 100%; height: auto; display: none;"></canvas>
 
             <div id="game-ui" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.88); text-align: center; padding: 20px 16px; width: 100%; box-sizing: border-box;">
                 <h3 id="game-title" style="font-family: 'Pacifico', cursive; font-size: 28px; color: #fff; margin-bottom: 16px; text-transform: none;">Морковный забег</h3>
@@ -1062,16 +1062,50 @@ document.addEventListener("DOMContentLoaded", function() {
     let loadedCount = 0;
     let hasError = false;
 
+    function removeBluePixels(img, callback) {
+        const tmp = document.createElement('canvas');
+        tmp.width = img.naturalWidth || img.width;
+        tmp.height = img.naturalHeight || img.height;
+        const c = tmp.getContext('2d');
+        c.drawImage(img, 0, 0);
+        const id = c.getImageData(0, 0, tmp.width, tmp.height);
+        const d = id.data;
+        for (let i = 0; i < d.length; i += 4) {
+            const r = d[i], g = d[i+1], b = d[i+2], a = d[i+3];
+            if (a > 30 && b > 140 && b > r && b > g * 0.85) {
+                d[i+3] = 0;
+            }
+        }
+        c.putImageData(id, 0, 0);
+        const out = new Image();
+        out.onload = function() { callback(out); };
+        out.src = tmp.toDataURL('image/png');
+    }
+
+    const total = Object.keys(imgSources).length;
+
     for (let key in imgSources) {
         images[key] = new Image();
-        images[key].onload = function() {
-            loadedCount++;
-            if (loadedCount === Object.keys(imgSources).length && !hasError) {
-                startBtn.style.opacity = '1';
-                startBtn.style.pointerEvents = 'auto';
-                startBtn.querySelector('span').innerText = 'Начать игру';
+        images[key].onload = (function(k) { return function() {
+            if (k === 'carrot') {
+                removeBluePixels(images[k], function(processed) {
+                    images[k] = processed;
+                    loadedCount++;
+                    if (loadedCount === total && !hasError) {
+                        startBtn.style.opacity = '1';
+                        startBtn.style.pointerEvents = 'auto';
+                        startBtn.querySelector('span').innerText = 'Начать игру';
+                    }
+                });
+            } else {
+                loadedCount++;
+                if (loadedCount === total && !hasError) {
+                    startBtn.style.opacity = '1';
+                    startBtn.style.pointerEvents = 'auto';
+                    startBtn.querySelector('span').innerText = 'Начать игру';
+                }
             }
-        };
+        }; })(key);
         images[key].onerror = function() {
             hasError = true;
             console.error(`Ошибка загрузки: ${imgSources[key]}`);
@@ -1088,18 +1122,18 @@ document.addEventListener("DOMContentLoaded", function() {
     let obstacles = [];
     let carrotsArr = [];
     
-    let gameSpeed = 1.5; 
+    let gameSpeed = 2.5;
 
     // Настройки персонажа
     const bunny = {
-        x: 50, y: 190, w: 80, h: 70,
-        dy: 0, 
-        jumpPower: -12, 
-        gravity: 0.25,     
+        x: 50, y: 200, w: 70, h: 60,
+        dy: 0,
+        jumpPower: -9.5,
+        gravity: 0.25,
         grounded: true,
-        frameX: 0, 
-        maxFrames: 4, 
-        frameTimer: 0, 
+        frameX: 0,
+        maxFrames: 4,
+        frameTimer: 0,
         frameInterval: 10,
 
         jumpTimer: 0,
@@ -1108,7 +1142,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.grounded) {
                 this.dy = this.jumpPower;
                 this.grounded = false;
-                this.jumpTimer = 15;
+                this.jumpTimer = 20;
             }
         },
 		
@@ -1215,7 +1249,7 @@ document.addEventListener("DOMContentLoaded", function() {
         carrotsArr = [];
         carrotsCollected = 0;
         frames = 0;
-        gameSpeed = 1.5;
+        gameSpeed = 2.5;
         document.getElementById('copy-promo-btn').style.display = 'none';
         document.getElementById('copy-promo-hint').style.display = 'none';
         
@@ -1252,8 +1286,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let spawnRate = Math.floor(Math.max(140, 250 - (gameSpeed * 10)));
 
         if (frames > 80 && frames % spawnRate === 0) {
-            // Камни
-            obstacles.push({ x: canvas.width, y: 218, w: 50, h: 42 });
+            // Камни (y+h=260 = земля)
+            obstacles.push({ x: canvas.width, y: 220, w: 44, h: 40 });
         }
         
         for (let i = 0; i < obstacles.length; i++) {
@@ -1273,8 +1307,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         if (frames > 80 && frames % Math.floor(spawnRate - 50) === 0 && frames % spawnRate !== 0) {
-            let carrotY = Math.random() > 0.5 ? 210 : 120; 
-            carrotsArr.push({ x: canvas.width, y: carrotY, w: 50, h: 50 });
+            let carrotY = Math.random() > 0.5 ? 215 : 130;
+            carrotsArr.push({ x: canvas.width, y: carrotY, w: 42, h: 42 });
         }
         
         for (let i = 0; i < carrotsArr.length; i++) {
