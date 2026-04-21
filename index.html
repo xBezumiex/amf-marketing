@@ -1257,12 +1257,10 @@ document.addEventListener("DOMContentLoaded", function() {
             ctx.drawImage(images.obstacle, obs.x, obs.y, obs.w, obs.h);
             
 
-            // Столкновение засчитывается, только если кролик вошел в камень
-            // Убираем по 35 пикселей с ширины и по 20 с высоты
-            if (bunny.x < obs.x + obs.w - 35 && 
-                bunny.x + bunny.w - 35 > obs.x &&
-                bunny.y < obs.y + obs.h - 20 && 
-                bunny.y + bunny.h - 20 > obs.y) {
+            if (bunny.x < obs.x + obs.w - 18 &&
+                bunny.x + bunny.w - 45 > obs.x &&
+                bunny.y < obs.y + obs.h - 12 &&
+                bunny.y + bunny.h - 20 > obs.y + 15) {
                 isPlaying = false;
                 gameOver();
             }
