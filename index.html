@@ -795,6 +795,13 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 							</div>
 						</div>
 
+						<div style="margin: 12px 0 16px; font-size: 13px; color: #555;">
+							<label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer;">
+								<input type="checkbox" name="consent" required style="margin-top:3px; accent-color:#b7780e; flex-shrink:0;">
+								<span>Я согласен(а) с <a href="#" data-toggle="modal" data-target="#consentModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">обработкой персональных данных</a></span>
+							</label>
+						</div>
+
 						<button type="submit" class="btn">
 							<span>Задай вопрос</span>
 						</button>
@@ -1003,6 +1010,48 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">9. Контактная информация</h5>
 					<p>Email: <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a><br>
 					Телефон: <a href="tel:+79231128754" style="color:#b7780e;">+7 923 112-87-54</a></p>
+
+					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 27.04.2026</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Consent Modal -->
+	<div class="modal fade" id="consentModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content" style="border-radius:10px; overflow:hidden;">
+				<div class="modal-header" style="background:#1c1c1c; border-bottom:3px solid #b7780e; padding:16px 20px; position:relative; text-align:center;">
+					<h4 style="color:#fff; font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; margin:0; padding:0 40px;">Согласие на обработку персональных данных</h4>
+					<button type="button" data-dismiss="modal" aria-label="Close" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:32px; line-height:1; cursor:pointer; padding:0; margin:0;">&times;</button>
+				</div>
+				<div class="modal-body" style="background:#fff; padding:30px 40px; max-height:70vh; overflow-y:auto; color:#222; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.8;">
+
+					<p>Пользователь, оставляя заявку на сайте <strong>amf-marketing.ru</strong>, даёт согласие Индивидуальному предпринимателю Воронину Артёму Александровичу на обработку своих персональных данных.</p>
+
+					<p><strong>Оператор:</strong><br>
+					ИП Воронин Артём Александрович<br>
+					ИНН: 540402715350<br>
+					ОГРНИП: 325547600186131<br>
+					Адрес: г. Новосибирск</p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Какие данные обрабатываются</h5>
+					<p>— имя<br>— номер телефона<br>— email<br>— иные данные, указанные в форме</p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Цели обработки</h5>
+					<p>— связь с пользователем<br>— обработка заявок<br>— оказание услуг<br>— направление предложений</p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Что мы делаем с данными</h5>
+					<p>Сбор, хранение, использование и удаление персональных данных.</p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Срок действия</h5>
+					<p>Согласие действует до момента его отзыва пользователем.</p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Отзыв согласия</h5>
+					<p>Пользователь может отозвать согласие, направив запрос на email: <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
+
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Подтверждение</h5>
+					<p>Пользователь подтверждает согласие на обработку персональных данных путём проставления галочки в форме на сайте.</p>
 
 					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 27.04.2026</p>
 				</div>
