@@ -9536,6 +9536,20 @@ input[type='button'] {
   margin-top: 0;
 }
 
+.promo-box .block-txt .btn {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .promo-box .block-txt .btn {
+    margin-top: 20px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
 /* progress-area */
 .progress-area {
   position: relative;
