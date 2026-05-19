@@ -116,12 +116,53 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
     transform: translate(-50%, -50%);
 }
 	
-.form-hp { 
-    position: absolute; 
-    left: -9999px; 
-    opacity: 0; 
-    pointer-events: none; 
+.form-hp {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
     tab-index: -1;
+}
+
+/* ===== Cookie Banner ===== */
+#cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #1c1c1c;
+    color: #ddd;
+    z-index: 99999;
+    padding: 16px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.4);
+    transform: translateY(100%);
+    transition: transform .4s ease;
+}
+#cookie-banner.cookie--show { transform: translateY(0); }
+.cookie-inner {
+    max-width: 1140px; margin: 0 auto;
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.cookie-text { flex: 1; min-width: 200px; }
+.cookie-text a { color: #b7780e; text-decoration: underline; cursor: pointer; }
+.cookie-btns { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+.cookie-btn-ok {
+    background: #b7780e; color: #fff; border: none;
+    padding: 10px 24px; font-family: 'Raleway',sans-serif;
+    font-size: 14px; font-weight: 700; cursor: pointer; border-radius: 4px; white-space: nowrap;
+}
+.cookie-btn-ok:hover { background: #9a6409; }
+.cookie-btn-no {
+    background: transparent; color: #aaa; border: 1px solid #555;
+    padding: 10px 24px; font-family: 'Raleway',sans-serif;
+    font-size: 14px; cursor: pointer; border-radius: 4px; white-space: nowrap;
+}
+.cookie-btn-no:hover { color: #fff; border-color: #999; }
+@media (max-width: 600px) {
+    .cookie-inner { flex-direction: column; align-items: flex-start; }
+    .cookie-btns { width: 100%; }
+    .cookie-btn-ok, .cookie-btn-no { flex: 1; text-align: center; min-height: 44px; }
 }
 </style>
 </head>
@@ -129,6 +170,17 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 	<div id="form-toast" class="form-toast">
     	<span class="form-toast__text"></span>
 	</div>
+	<!-- Cookie Banner -->
+	<div id="cookie-banner" role="dialog" aria-label="Уведомление о cookies">
+		<div class="cookie-inner">
+			<p class="cookie-text">Мы используем cookies и сервисы аналитики, в том числе Яндекс.Метрику, чтобы улучшать работу сайта, анализировать посещаемость и эффективность рекламы. Продолжая пользоваться сайтом или нажимая «Согласен», вы соглашаетесь с использованием cookies. Подробнее — в <a href="#" data-toggle="modal" data-target="#privacyModal" id="cookie-policy-link">Политике конфиденциальности</a>.</p>
+			<div class="cookie-btns">
+				<button class="cookie-btn-ok" id="cookie-accept">Согласен</button>
+				<button class="cookie-btn-no" id="cookie-decline">Отказаться</button>
+			</div>
+		</div>
+	</div>
+
 	<div id="wrapper">
 		<!-- Header -->
 		<header id="header">
@@ -261,9 +313,9 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 							<div class="col-sm-6 block-txt">
 								<i class="el-font icon-map-pin"></i>
 								<div class="text-holder">
-									<strong class="title">GEO-продвижение</strong>
+									<strong class="title">Геомаркетинг</strong>
 									<div class="progress-area" data-to="92"></div>
-									<p>Продвигаем бизнес в Яндекс Картах, 2ГИС и нейросетях. Помогаем компании чаще появляться в локальной выдаче и получать больше заявок.</p>
+									<p>Продвигаем бизнес в Яндекс Картах, 2ГИС. Помогаем компании чаще появляться в локальной выдаче и получать больше заявок.</p>
 									<a href="/geo-prodvizhenie/" class="btn"><span>Подробнее</span></a>
 								</div>
 							</div>
@@ -283,7 +335,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 								<div class="text-holder">
 									<strong class="title">Продвижение в нейросетях</strong>
 									<div class="progress-area" data-to="88"></div>
-									<p>Помогаем бренду попадать в ответы ChatGPT, ЯндексGPT и других AI-сервисов за счет контента, структуры и упоминаний.</p>
+									<p>Помогаем бренду попадать в ответы ChatGPT, Алиса AI и других AI-сервисов за счет контента, структуры и упоминаний.</p>
 									<a href="/prodvizhenie-v-neyrosetyah/" class="btn"><span>Подробнее</span></a>
 								</div>
 							</div>
@@ -786,7 +838,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 						<div style="margin: 12px 0 16px; font-size: 13px; color: #555;">
 							<label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer;">
 								<input type="checkbox" name="consent" required style="margin-top:3px; accent-color:#b7780e; flex-shrink:0;">
-								<span>Я согласен(а) с <a href="#" data-toggle="modal" data-target="#consentModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">обработкой персональных данных</a></span>
+								<span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#" data-toggle="modal" data-target="#privacyModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">Политикой конфиденциальности</a> и <a href="#" data-toggle="modal" data-target="#consentModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">Согласием на обработку персональных данных</a></span>
 							</label>
 						</div>
 
@@ -883,9 +935,14 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 			<div class="container">
 				<div style="display:flex; flex-direction:column; align-items:center; padding:20px 0 10px; text-align:center;">
 					<img src="images/logo4.png" alt="logo" style="margin-bottom:14px;">
-					<p style="margin:0; font-size:13px; color:#aaa;">
-						&copy; Copyright 2018-2026 — АМФ-маркетинг &nbsp;·&nbsp;
+					<p style="margin:0; font-size:13px; color:#aaa; line-height:2;">
+						&copy; Copyright 2018-2026 — АМФ-маркетинг
+						<br>
 						<a href="#" data-toggle="modal" data-target="#privacyModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Политика конфиденциальности</a>
+						&nbsp;·&nbsp;
+						<a href="#" data-toggle="modal" data-target="#consentModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Согласие на обработку персональных данных</a>
+						&nbsp;·&nbsp;
+						<a href="#" id="cookie-settings-link" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Настройки cookies</a>
 					</p>
 				</div>
 			</div>
@@ -937,6 +994,12 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 										<input type="text" placeholder="Вопрос" name="message">
 									</div>
 								</div>
+								<div style="margin: 12px 0 16px; font-size: 13px; color: #555; text-align:left;">
+									<label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer;">
+										<input type="checkbox" name="consent" required style="margin-top:3px; accent-color:#b7780e; flex-shrink:0;">
+										<span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#" data-toggle="modal" data-target="#privacyModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">Политикой конфиденциальности</a> и <a href="#" data-toggle="modal" data-target="#consentModal" style="color:#b7780e; text-decoration:underline;" onclick="return false;">Согласием на обработку персональных данных</a></span>
+									</label>
+								</div>
 								<button name="sendmessage" type="submit" class="btn" onclick="try{yaCounter48341462.reachGoal('form-but');}catch(e){}"><span>Отправить</span></button>
 							</fieldset>
 						</form>
@@ -985,9 +1048,12 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 
 					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">5. Хранение и защита данных</h5>
 					<p>Оператор принимает необходимые организационные и технические меры для защиты персональных данных от несанкционированного доступа, изменения, раскрытия и уничтожения.</p>
+					<p>Персональные данные пользователей хранятся не дольше, чем это необходимо для достижения целей их обработки, либо в течение сроков, установленных законодательством Российской Федерации.</p>
 
-					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">6. Использование cookies</h5>
-					<p>Сайт использует cookies и системы аналитики (Яндекс.Метрика и другие), которые помогают анализировать поведение пользователей и улучшать работу сайта. Пользователь может отключить cookies в настройках браузера.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">6. Использование cookies и сервисов аналитики</h5>
+					<p>Сайт использует файлы cookies и сервисы веб-аналитики, в том числе Яндекс.Метрику. Эти инструменты помогают анализировать посещаемость сайта, действия пользователей, эффективность рекламных кампаний и улучшать качество работы сайта.</p>
+					<p>Cookies могут содержать техническую информацию о браузере, устройстве пользователя, действиях на сайте, источнике перехода и иных параметрах посещения.</p>
+					<p>Пользователь может ограничить или отключить использование cookies в настройках своего браузера, а также изменить выбор через ссылку «Настройки cookies» на сайте.</p>
 
 					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">7. Права пользователя</h5>
 					<p>Пользователь имеет право запросить информацию о своих данных, потребовать их изменение или удаление, отозвать согласие на обработку. Для этого отправьте запрос на <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
@@ -999,7 +1065,7 @@ var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
 					<p>Email: <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a><br>
 					Телефон: <a href="tel:+79231128754" style="color:#b7780e;">+7 923 112-87-54</a></p>
 
-					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 27.04.2026</p>
+					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 19.05.2026</p>
 				</div>
 			</div>
 		</div>
@@ -1513,6 +1579,51 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<!-- Cookie Banner Logic -->
+<script>
+(function () {
+    var KEY = 'amf_cookie_choice';
+    var banner = document.getElementById('cookie-banner');
+
+    function getChoice() { return localStorage.getItem(KEY); }
+
+    function saveChoice(val) {
+        localStorage.setItem(KEY, val);
+        var d = new Date();
+        d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+        document.cookie = KEY + '=' + val + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+    }
+
+    function showBanner() {
+        setTimeout(function () { banner.classList.add('cookie--show'); }, 800);
+    }
+
+    function hideBanner() { banner.classList.remove('cookie--show'); }
+
+    if (!getChoice()) showBanner();
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+        saveChoice('accepted');
+        hideBanner();
+    });
+
+    document.getElementById('cookie-decline').addEventListener('click', function () {
+        saveChoice('declined');
+        hideBanner();
+    });
+
+    document.getElementById('cookie-settings-link').addEventListener('click', function (e) {
+        e.preventDefault();
+        localStorage.removeItem(KEY);
+        document.cookie = KEY + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        showBanner();
+    });
+
+    document.getElementById('cookie-policy-link').addEventListener('click', function () {
+        hideBanner();
+    });
+})();
+</script>
 
 </body>
 </html>
