@@ -83,6 +83,7 @@
 	.gm-hero h1 span { color: #b7780e; }
 	.gm-hero .gm-hero-sub { font-size: 18px; color: #bbb; max-width: 680px; margin: 0 auto 36px; line-height: 1.7; }
 	.gm-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+	.gm-hero-btns .btn { color: #fff !important; }
 	.gm-cta-btn {
 		display: inline-block;
 		background: #b7780e;
@@ -781,7 +782,9 @@ document.querySelectorAll('.gm-hero-btns a[href="#lead-form"]').forEach(function
 	btn.addEventListener('click', function(e) {
 		e.preventDefault();
 		var target = document.getElementById('lead-form');
-		if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+		if (target) {
+			$('html, body').animate({ scrollTop: $(target).offset().top }, 1000, 'swing');
+		}
 	});
 });
 </script>
