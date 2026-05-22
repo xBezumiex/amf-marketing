@@ -83,22 +83,23 @@
 	.gm-hero h1 span { color: #b7780e; }
 	.gm-hero .gm-hero-sub { font-size: 18px; color: #bbb; max-width: 680px; margin: 0 auto 36px; line-height: 1.7; }
 	.gm-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-	.gm-hero-btns .btn {
-		color: #fff;
+	.gm-cta-btn {
+		display: inline-block;
 		background: #b7780e;
-		border: none;
-		padding: 14px 32px;
+		color: #fff !important;
+		font-family: 'Raleway', sans-serif;
 		font-size: 16px;
 		font-weight: 700;
+		padding: 14px 36px;
 		border-radius: 4px;
-		text-decoration: none;
-		display: inline-block;
+		text-decoration: none !important;
 		transition: background .2s;
 		min-width: 200px;
+		text-align: center;
+		cursor: pointer;
+		border: none;
 	}
-	.gm-hero-btns .btn:hover { background: #9a6409; color: #fff; }
-	.gm-hero-btns .btn span { display: inline; }
-	.gm-hero-btns .btn::before, .gm-hero-btns .btn::after { display: none; }
+	.gm-cta-btn:hover { background: #9a6409; color: #fff !important; }
 	@media (max-width: 600px) { .gm-hero h1 { font-size: 26px; } .gm-hero .gm-hero-sub { font-size: 15px; } }
 
 	/* Sections */
@@ -367,8 +368,8 @@
 		<h1>Геомаркетинг для бизнеса<br><span>в Яндекс Картах и 2ГИС</span></h1>
 		<p class="gm-hero-sub">Помогаем бизнесу чаще появляться в локальной выдаче, получать больше просмотров карточки и превращать их в реальные заявки.</p>
 		<div class="gm-hero-btns">
-			<a href="#lead-form" class="btn"><span>Получить разбор</span></a>
-			<a href="#lead-form" class="btn"><span>Обсудить проект</span></a>
+			<a href="#lead-form" class="gm-cta-btn">Получить разбор</a>
+			<a href="#lead-form" class="gm-cta-btn">Обсудить проект</a>
 		</div>
 	</div>
 </section>
@@ -611,7 +612,7 @@
 					<label for="gm-consent">Я даю согласие на обработку персональных данных в соответствии с <a href="#" data-toggle="modal" data-target="#privacyModal">Политикой конфиденциальности</a> и <a href="#" data-toggle="modal" data-target="#consentModal">Согласием на обработку персональных данных</a></label>
 				</div>
 				<div class="gm-form-submit">
-					<button type="submit" class="btn"><span>Получить разбор</span></button>
+					<button type="submit" class="gm-cta-btn" style="width:100%;">Получить разбор</button>
 				</div>
 			</form>
 		</div>
