@@ -83,7 +83,22 @@
 	.gm-hero h1 span { color: #b7780e; }
 	.gm-hero .gm-hero-sub { font-size: 18px; color: #bbb; max-width: 680px; margin: 0 auto 36px; line-height: 1.7; }
 	.gm-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-	.gm-hero-btns .btn { color: #fff; }
+	.gm-hero-btns .btn {
+		color: #fff;
+		background: #b7780e;
+		border: none;
+		padding: 14px 32px;
+		font-size: 16px;
+		font-weight: 700;
+		border-radius: 4px;
+		text-decoration: none;
+		display: inline-block;
+		transition: background .2s;
+		min-width: 200px;
+	}
+	.gm-hero-btns .btn:hover { background: #9a6409; color: #fff; }
+	.gm-hero-btns .btn span { display: inline; }
+	.gm-hero-btns .btn::before, .gm-hero-btns .btn::after { display: none; }
 	@media (max-width: 600px) { .gm-hero h1 { font-size: 26px; } .gm-hero .gm-hero-sub { font-size: 15px; } }
 
 	/* Sections */
@@ -633,8 +648,8 @@
 		<iframe src="https://yandex.ru/map-widget/v1/?ll=82.912376%2C55.034731&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzA5ODQ5NxJM0KDQvtGB0YHQuNGPLCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQv9GA0L7RgdC_0LXQutGCINCU0LjQvNC40YLRgNC-0LLQsCwgNyIKDcjSpUIVmyNcQg%2C%2C&z=16.39" width="100%" height="461" frameborder="1" allowfullscreen="false" style="position:relative;"></iframe>
 	</div>
 	<div class="container" style="margin-top:0;">
-		<div style="display:flex; flex-direction:column; align-items:center; padding:20px 0 10px; text-align:center;">
-			<img src="../images/logo4.png" alt="AMF-marketing" style="margin-bottom:14px;">
+		<div style="display:flex; flex-direction:column; align-items:center; padding:10px 0 6px; text-align:center;">
+			<img src="../images/logo4.png" alt="AMF-marketing" style="margin-bottom:8px; max-height:40px; width:auto;">
 			<p style="margin:0; font-size:13px; color:#aaa; line-height:2;">
 				&copy; Copyright 2018-2026 — АМФ-маркетинг
 				<br>
@@ -755,6 +770,17 @@ $(function () {
 			},
 			error: function() { showToast('Ошибка соединения с сервером', 'error'); }
 		});
+	});
+});
+</script>
+
+<!-- Smooth scroll for hero buttons -->
+<script>
+document.querySelectorAll('.gm-hero-btns a[href="#lead-form"]').forEach(function(btn) {
+	btn.addEventListener('click', function(e) {
+		e.preventDefault();
+		var target = document.getElementById('lead-form');
+		if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 	});
 });
 </script>
