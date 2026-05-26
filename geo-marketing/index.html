@@ -1,831 +1,833 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>Геомаркетинг для бизнеса в Яндекс Картах и 2ГИС | AMF-marketing</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Геомаркетинг для бизнеса: продвижение в Яндекс Картах и 2ГИС, работа с карточками, отзывами и локальной видимостью. AMF-marketing.">
-	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://amf-marketing.ru/geo-marketing/">
+	<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Геомаркетинг для бизнеса в Яндекс Картах и 2ГИС | AMF-marketing</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Геомаркетинг для бизнеса: продвижение в Яндекс Картах и 2ГИС, работа с карточками, отзывами и локальной видимостью. AMF-marketing.">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://amf-marketing.ru/geo-marketing/">
 
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,900" rel="stylesheet">
-	<link rel="stylesheet" href="../css/slick.css">
-	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
-	<link rel="stylesheet" href="../css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="../css/slick.css">
+		<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../css/style.css">
 
-	<!-- Yandex.Metrika -->
-	<script type="text/javascript">
-		(function(d,w,c){(w[c]=w[c]||[]).push(function(){try{w.yaCounter48341462=new Ya.Metrika({id:48341462,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});}catch(e){}});var n=d.getElementsByTagName("script")[0],s=d.createElement("script"),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.src="https://mc.yandex.ru/metrika/watch.js";if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",f,false);}else{f();}})(document,window,"yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/48341462" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+		<!-- Yandex.Metrika -->
+		<script type="text/javascript">
+			(function(d,w,c){(w[c]=w[c]||[]).push(function(){try{w.yaCounter48341462=new Ya.Metrika({id:48341462,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});}catch(e){}});var n=d.getElementsByTagName("script")[0],s=d.createElement("script"),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.src="https://mc.yandex.ru/metrika/watch.js";if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",f,false);}else{f();}})(document,window,"yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/48341462" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
 
-	<!-- Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132425630-1"></script>
-	<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-132425630-1');</script>
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132425630-1"></script>
+		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-132425630-1');</script>
 
-	<!-- Schema.org FAQPage -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "FAQPage",
-		"mainEntity": [
-			{
-				"@type": "Question",
-				"name": "Чем геомаркетинг отличается от SEO?",
-				"acceptedAnswer": {"@type": "Answer", "text": "SEO продвигает сайт в поисковой выдаче Яндекса и Google. Геомаркетинг — это продвижение карточки компании в геосервисах: Яндекс Картах и 2ГИС. Оба направления дополняют друг друга и работают в разных каналах привлечения клиентов."}
-			},
-			{
-				"@type": "Question",
-				"name": "Через сколько виден результат?",
-				"acceptedAnswer": {"@type": "Answer", "text": "Первые изменения заметны уже в первый месяц: улучшается полнота карточки, появляются новые фото и посты. Рост позиций и увеличение просмотров, как правило, происходят в течение 2–3 месяцев работы."}
-			},
-			{
-				"@type": "Question",
-				"name": "Нужно ли продвигаться и в Яндекс Картах, и в 2ГИС?",
-				"acceptedAnswer": {"@type": "Answer", "text": "Да, это два разных сервиса с разной аудиторией. Яндекс Карты охватывают пользователей экосистемы Яндекса, 2ГИС — отдельная аудитория с акцентом на навигацию. Присутствие в обоих сервисах расширяет охват потенциальных клиентов."}
-			},
-			{
-				"@type": "Question",
-				"name": "Можно ли продвигать несколько филиалов?",
-				"acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем как с одной точкой, так и с сетью филиалов. Для каждой точки ведётся отдельная карточка и своя аналитика."}
-			},
-			{
-				"@type": "Question",
-				"name": "Подходит ли геомаркетинг для малого бизнеса?",
-				"acceptedAnswer": {"@type": "Answer", "text": "Да, геомаркетинг особенно эффективен для локального малого бизнеса — кафе, салонов, мастерских, сервисов. Это один из самых доступных инструментов для привлечения клиентов из ближайшего района."}
-			},
-			{
-				"@type": "Question",
-				"name": "Что делать, если мало отзывов?",
-				"acceptedAnswer": {"@type": "Answer", "text": "Мы помогаем выстроить процесс получения отзывов от реальных клиентов. Также настраиваем работу с уже имеющимися отзывами: отвечаем на них, повышаем активность и доверие к карточке."}
-			}
-		]
-	}
-	</script>
+		<!-- Schema.org FAQPage -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			"mainEntity": [
+				{
+					"@type": "Question",
+					"name": "Чем геомаркетинг отличается от SEO?",
+					"acceptedAnswer": {"@type": "Answer", "text": "SEO продвигает сайт в поисковой выдаче Яндекса и Google. Геомаркетинг — это продвижение карточки компании в геосервисах: Яндекс Картах и 2ГИС. Оба направления дополняют друг друга и работают в разных каналах привлечения клиентов."}
+				},
+				{
+					"@type": "Question",
+					"name": "Через сколько виден результат?",
+					"acceptedAnswer": {"@type": "Answer", "text": "Первые изменения заметны уже в первый месяц: улучшается полнота карточки, появляются новые фото и посты. Рост позиций и увеличение просмотров, как правило, происходят в течение 2–3 месяцев работы."}
+				},
+				{
+					"@type": "Question",
+					"name": "Нужно ли продвигаться и в Яндекс Картах, и в 2ГИС?",
+					"acceptedAnswer": {"@type": "Answer", "text": "Да, это два разных сервиса с разной аудиторией. Яндекс Карты охватывают пользователей экосистемы Яндекса, 2ГИС — отдельная аудитория с акцентом на навигацию. Присутствие в обоих сервисах расширяет охват потенциальных клиентов."}
+				},
+				{
+					"@type": "Question",
+					"name": "Можно ли продвигать несколько филиалов?",
+					"acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем как с одной точкой, так и с сетью филиалов. Для каждой точки ведётся отдельная карточка и своя аналитика."}
+				},
+				{
+					"@type": "Question",
+					"name": "Подходит ли геомаркетинг для малого бизнеса?",
+					"acceptedAnswer": {"@type": "Answer", "text": "Да, геомаркетинг особенно эффективен для локального малого бизнеса — кафе, салонов, мастерских, сервисов. Это один из самых доступных инструментов для привлечения клиентов из ближайшего района."}
+				},
+				{
+					"@type": "Question",
+					"name": "Что делать, если мало отзывов?",
+					"acceptedAnswer": {"@type": "Answer", "text": "Мы помогаем выстроить процесс получения отзывов от реальных клиентов. Также настраиваем работу с уже имеющимися отзывами: отвечаем на них, повышаем активность и доверие к карточке."}
+				}
+			]
+		}
+		</script>
 
-	<style>
-	body { background: #1c1c1c; color: #fff; font-family: 'Raleway', sans-serif; }
+		<style>
+		body { background: #1c1c1c; color: #fff; font-family: 'Raleway', sans-serif; }
 
-	/* Скрыть бургер на десктопе */
-	@media (min-width: 768px) {
-		.nav-opener { display: none !important; }
-	}
+		/* Скрыть бургер на десктопе */
+		@media (min-width: 768px) {
+			.nav-opener { display: none !important; }
+		}
 
-	/* Breadcrumbs */
-	.gm-breadcrumbs { background: #1c1c1c; padding: 14px 0 0; font-size: 13px; color: #888; }
-	.gm-breadcrumbs a { color: #888; text-decoration: none; }
-	.gm-breadcrumbs a:hover { color: #b7780e; }
-	.gm-breadcrumbs span { color: #555; margin: 0 6px; }
+		/* Breadcrumbs */
+		.gm-breadcrumbs { background: #1c1c1c; padding: 140px 0 14px; font-size: 13px; color: #888; }
+		.gm-breadcrumbs a { color: #888; text-decoration: none; }
+		.gm-breadcrumbs a:hover { color: #b7780e; }
+		.gm-breadcrumbs span { color: #555; margin: 0 6px; }
+		@media (max-width: 991px) { .gm-breadcrumbs { padding-top: 110px; } }
+		@media (max-width: 600px) { .gm-breadcrumbs { padding-top: 90px; } }
 
-	/* Hero */
-	.gm-hero { background: #1c1c1c; padding: 80px 15px 90px; text-align: center; position: relative; border-bottom: 1px solid #2e2e2e; }
-	.gm-hero h1 { font-size: 42px; font-weight: 900; color: #fff; margin: 0 0 20px; line-height: 1.2; }
-	.gm-hero h1 span { color: #b7780e; }
-	.gm-hero .gm-hero-sub { font-size: 18px; color: #bbb; max-width: 680px; margin: 0 auto 36px; line-height: 1.7; }
-	.gm-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-	.gm-hero-btns .btn { color: #fff !important; }
-	.gm-cta-btn {
-		display: inline-block;
-		background: #b7780e;
-		color: #fff !important;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		font-weight: 700;
-		padding: 14px 36px;
-		border-radius: 4px;
-		text-decoration: none !important;
-		transition: background .2s;
-		min-width: 200px;
-		text-align: center;
-		cursor: pointer;
-		border: none;
-	}
-	.gm-cta-btn:hover { background: #9a6409; color: #fff !important; }
-	@media (max-width: 600px) { .gm-hero h1 { font-size: 26px; } .gm-hero .gm-hero-sub { font-size: 15px; } }
+		/* Hero */
+		.gm-hero { background: #1c1c1c; padding: 80px 15px 90px; text-align: center; position: relative; border-bottom: 1px solid #2e2e2e; }
+		.gm-hero h1 { font-size: 42px; font-weight: 900; color: #fff; margin: 0 0 20px; line-height: 1.2; }
+		.gm-hero h1 span { color: #b7780e; }
+		.gm-hero .gm-hero-sub { font-size: 18px; color: #bbb; max-width: 680px; margin: 0 auto 36px; line-height: 1.7; }
+		.gm-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+		.gm-hero-btns .btn { color: #fff !important; }
+		.gm-cta-btn {
+			display: inline-block;
+			background: #b7780e;
+			color: #fff !important;
+			font-family: 'Raleway', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 14px 36px;
+			border-radius: 4px;
+			text-decoration: none !important;
+			transition: background .2s;
+			min-width: 200px;
+			text-align: center;
+			cursor: pointer;
+			border: none;
+		}
+		.gm-cta-btn:hover { background: #9a6409; color: #fff !important; }
+		@media (max-width: 600px) { .gm-hero h1 { font-size: 26px; } .gm-hero .gm-hero-sub { font-size: 15px; } }
 
-	/* Sections */
-	.gm-section { padding: 70px 15px; width: 100%; }
-	.gm-section--light { background: #fff; color: #222; }
-	.gm-section--light h2 { color: #1c1c1c !important; }
-	.gm-section--light h2 span { color: #b7780e !important; }
-	.gm-section--dark { background: #1c1c1c; color: #fff; }
-	.gm-section--dark h2 { color: #fff !important; }
-	.gm-section--dark h2 span { color: #b7780e !important; }
-	.gm-section--dark h3 { color: #fff !important; }
-	.gm-section--gray { background: #f7f7f7; color: #222; }
-	.gm-section--gray h2 { color: #1c1c1c !important; }
-	.gm-section--gray h2 span { color: #b7780e !important; }
-	.gm-section h2 { font-size: 32px; font-weight: 900; margin: 0 0 40px; text-align: center; }
-	@media (max-width: 600px) { .gm-section h2 { font-size: 22px; } }
+		/* Sections */
+		.gm-section { padding: 70px 15px; width: 100%; }
+		.gm-section--light { background: #fff; color: #222; }
+		.gm-section--light h2 { color: #1c1c1c !important; }
+		.gm-section--light h2 span { color: #b7780e !important; }
+		.gm-section--dark { background: #1c1c1c; color: #fff; }
+		.gm-section--dark h2 { color: #fff !important; }
+		.gm-section--dark h2 span { color: #b7780e !important; }
+		.gm-section--dark h3 { color: #fff !important; }
+		.gm-section--gray { background: #f7f7f7; color: #222; }
+		.gm-section--gray h2 { color: #1c1c1c !important; }
+		.gm-section--gray h2 span { color: #b7780e !important; }
+		.gm-section h2 { font-size: 32px; font-weight: 900; margin: 0 0 40px; text-align: center; }
+		@media (max-width: 600px) { .gm-section h2 { font-size: 22px; } }
 
-	/* Cards */
-	.gm-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-	.gm-card { background: #252525; border: 1px solid #333; border-radius: 8px; padding: 28px 22px; transition: border-color .3s; }
-	.gm-card:hover { border-color: #b7780e; }
-	.gm-card--light { background: #fff; border: 1px solid #e5e5e5; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
-	.gm-card--light:hover { border-color: #b7780e; }
-	.gm-card-icon { font-size: 32px; margin-bottom: 14px; }
-	.gm-card h3 { font-size: 17px; font-weight: 700; margin: 0 0 8px; color: #fff; }
-	.gm-card--light h3 { color: #1c1c1c; }
-	.gm-card p { font-size: 14px; color: #aaa; margin: 0; line-height: 1.6; }
-	.gm-card--light p { color: #555; }
+		/* Cards */
+		.gm-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+		.gm-card { background: #252525; border: 1px solid #333; border-radius: 8px; padding: 28px 22px; transition: border-color .3s; }
+		.gm-card:hover { border-color: #b7780e; }
+		.gm-card--light { background: #fff; border: 1px solid #e5e5e5; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+		.gm-card--light:hover { border-color: #b7780e; }
+		.gm-card-icon { font-size: 32px; margin-bottom: 14px; }
+		.gm-card h3 { font-size: 17px; font-weight: 700; margin: 0 0 8px; color: #fff; }
+		.gm-card--light h3 { color: #1c1c1c; }
+		.gm-card p { font-size: 14px; color: #aaa; margin: 0; line-height: 1.6; }
+		.gm-card--light p { color: #555; }
 
-	/* Who it's for pills */
-	.gm-pills { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
-	.gm-pill {
-		background: #252525; border: 1px solid #444;
-		border-radius: 6px; padding: 16px 24px;
-		font-size: 15px; font-weight: 600; color: #ddd;
-		transition: all .3s; text-align: center;
-	}
-	.gm-pill:hover { border-color: #b7780e; color: #fff; background: #2e2e2e; }
+		/* Who it's for pills */
+		.gm-pills { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+		.gm-pill {
+			background: #252525; border: 1px solid #444;
+			border-radius: 6px; padding: 16px 24px;
+			font-size: 15px; font-weight: 600; color: #ddd;
+			transition: all .3s; text-align: center;
+		}
+		.gm-pill:hover { border-color: #b7780e; color: #fff; background: #2e2e2e; }
 
-	/* Steps (block 4 – light bg) */
-	.gm-steps-light {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 16px;
-	}
-	.gm-step-light {
-		background: #fff;
-		border-radius: 8px;
-		padding: 24px 20px;
-		border-top: 3px solid #b7780e;
-		box-shadow: 0 2px 10px rgba(0,0,0,.06);
-		display: flex;
-		align-items: flex-start;
-		gap: 16px;
-	}
-	.gm-step-light-num {
-		font-size: 28px; font-weight: 900; color: #b7780e;
-		line-height: 1; flex-shrink: 0; min-width: 36px;
-	}
-	.gm-step-light h3 { font-size: 15px; font-weight: 700; color: #1c1c1c !important; margin: 4px 0 0; line-height: 1.4; }
+		/* Steps (block 4 – light bg) */
+		.gm-steps-light {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+			gap: 16px;
+		}
+		.gm-step-light {
+			background: #fff;
+			border-radius: 8px;
+			padding: 24px 20px;
+			border-top: 3px solid #b7780e;
+			box-shadow: 0 2px 10px rgba(0,0,0,.06);
+			display: flex;
+			align-items: flex-start;
+			gap: 16px;
+		}
+		.gm-step-light-num {
+			font-size: 28px; font-weight: 900; color: #b7780e;
+			line-height: 1; flex-shrink: 0; min-width: 36px;
+		}
+		.gm-step-light h3 { font-size: 15px; font-weight: 700; color: #1c1c1c !important; margin: 4px 0 0; line-height: 1.4; }
 
-	/* Steps (block 6 – dark bg) */
-	.gm-steps-dark {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 16px;
-	}
-	@media (max-width: 768px) { .gm-steps-dark { grid-template-columns: repeat(2, 1fr); } }
-	@media (max-width: 480px) { .gm-steps-dark { grid-template-columns: 1fr; } }
-	.gm-step-dark {
-		background: #252525;
-		border: 1px solid #333;
-		border-radius: 8px;
-		padding: 24px 20px;
-		display: flex;
-		align-items: flex-start;
-		gap: 14px;
-		transition: border-color .3s;
-	}
-	.gm-step-dark:hover { border-color: #b7780e; }
-	.gm-step-dark-num {
-		background: #b7780e; color: #fff;
-		font-size: 14px; font-weight: 900;
-		width: 32px; height: 32px;
-		border-radius: 50%;
-		display: flex; align-items: center; justify-content: center;
-		flex-shrink: 0;
-	}
-	.gm-step-dark h3 { font-size: 15px; font-weight: 700; color: #fff !important; margin: 4px 0 0; line-height: 1.4; }
+		/* Steps (block 6 – dark bg) */
+		.gm-steps-dark {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 16px;
+		}
+		@media (max-width: 768px) { .gm-steps-dark { grid-template-columns: repeat(2, 1fr); } }
+		@media (max-width: 480px) { .gm-steps-dark { grid-template-columns: 1fr; } }
+		.gm-step-dark {
+			background: #252525;
+			border: 1px solid #333;
+			border-radius: 8px;
+			padding: 24px 20px;
+			display: flex;
+			align-items: flex-start;
+			gap: 14px;
+			transition: border-color .3s;
+		}
+		.gm-step-dark:hover { border-color: #b7780e; }
+		.gm-step-dark-num {
+			background: #b7780e; color: #fff;
+			font-size: 14px; font-weight: 900;
+			width: 32px; height: 32px;
+			border-radius: 50%;
+			display: flex; align-items: center; justify-content: center;
+			flex-shrink: 0;
+		}
+		.gm-step-dark h3 { font-size: 15px; font-weight: 700; color: #fff !important; margin: 4px 0 0; line-height: 1.4; }
 
-	/* Problems – redesign */
-	.gm-problems { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-	@media (max-width: 700px) { .gm-problems { grid-template-columns: 1fr; } }
-	.gm-problem-card {
-		background: #fff;
-		border-radius: 8px;
-		overflow: hidden;
-		box-shadow: 0 2px 10px rgba(0,0,0,.07);
-	}
-	.gm-problem-cause {
-		padding: 16px 18px;
-		border-left: 4px solid #e74c3c;
-		font-size: 14px; font-weight: 700; color: #1c1c1c; line-height: 1.5;
-	}
-	.gm-problem-cause::before {
-		content: '⚠ Проблема';
-		display: block; font-size: 11px; font-weight: 600;
-		color: #e74c3c; text-transform: uppercase;
-		letter-spacing: .5px; margin-bottom: 6px;
-	}
-	.gm-problem-effect {
-		padding: 14px 18px;
-		background: #fff8f8;
-		border-left: 4px solid #e74c3c;
-		font-size: 13px; color: #c0392b; line-height: 1.5;
-	}
-	.gm-problem-effect::before {
-		content: '→ Последствие';
-		display: block; font-size: 11px; font-weight: 600;
-		color: #e74c3c; text-transform: uppercase;
-		letter-spacing: .5px; margin-bottom: 5px;
-	}
+		/* Problems – redesign */
+		.gm-problems { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+		@media (max-width: 700px) { .gm-problems { grid-template-columns: 1fr; } }
+		.gm-problem-card {
+			background: #fff;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 2px 10px rgba(0,0,0,.07);
+		}
+		.gm-problem-cause {
+			padding: 16px 18px;
+			border-left: 4px solid #e74c3c;
+			font-size: 14px; font-weight: 700; color: #1c1c1c; line-height: 1.5;
+		}
+		.gm-problem-cause::before {
+			content: '⚠ Проблема';
+			display: block; font-size: 11px; font-weight: 600;
+			color: #e74c3c; text-transform: uppercase;
+			letter-spacing: .5px; margin-bottom: 6px;
+		}
+		.gm-problem-effect {
+			padding: 14px 18px;
+			background: #fff8f8;
+			border-left: 4px solid #e74c3c;
+			font-size: 13px; color: #c0392b; line-height: 1.5;
+		}
+		.gm-problem-effect::before {
+			content: '→ Последствие';
+			display: block; font-size: 11px; font-weight: 600;
+			color: #e74c3c; text-transform: uppercase;
+			letter-spacing: .5px; margin-bottom: 5px;
+		}
 
-	/* Results */
-	.gm-results {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 16px;
-	}
-	@media (max-width: 768px) { .gm-results { grid-template-columns: repeat(2, 1fr); } }
-	@media (max-width: 480px) { .gm-results { grid-template-columns: 1fr; } }
-	.gm-result-card {
-		background: #fff;
-		border-radius: 8px;
-		padding: 30px 20px;
-		text-align: center;
-		border-top: 3px solid #b7780e;
-		box-shadow: 0 2px 10px rgba(0,0,0,.06);
-		transition: transform .2s;
-	}
-	.gm-result-card:hover { transform: translateY(-3px); }
-	.gm-result-icon { font-size: 36px; margin-bottom: 12px; }
-	.gm-result-card p { font-size: 15px; font-weight: 600; color: #1c1c1c; margin: 0; line-height: 1.4; }
+		/* Results */
+		.gm-results {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 16px;
+		}
+		@media (max-width: 768px) { .gm-results { grid-template-columns: repeat(2, 1fr); } }
+		@media (max-width: 480px) { .gm-results { grid-template-columns: 1fr; } }
+		.gm-result-card {
+			background: #fff;
+			border-radius: 8px;
+			padding: 30px 20px;
+			text-align: center;
+			border-top: 3px solid #b7780e;
+			box-shadow: 0 2px 10px rgba(0,0,0,.06);
+			transition: transform .2s;
+		}
+		.gm-result-card:hover { transform: translateY(-3px); }
+		.gm-result-icon { font-size: 36px; margin-bottom: 12px; }
+		.gm-result-card p { font-size: 15px; font-weight: 600; color: #1c1c1c; margin: 0; line-height: 1.4; }
 
-	/* FAQ */
-	.gm-faq { max-width: 800px; margin: 0 auto; }
-	.gm-faq-item { border-bottom: 1px solid #e0e0e0; }
-	.gm-faq-item:first-child { border-top: 1px solid #e0e0e0; }
-	.gm-faq-q {
-		width: 100%; background: none; border: none; text-align: left;
-		padding: 18px 40px 18px 0; font-family: 'Raleway', sans-serif;
-		font-size: 16px; font-weight: 700; color: #1c1c1c; cursor: pointer;
-		position: relative; display: block;
-	}
-	.gm-faq-q:after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 22px; color: #b7780e; font-weight: 300; }
-	.gm-faq-item.open .gm-faq-q:after { content: '−'; }
-	.gm-faq-a { display: none; padding: 0 40px 18px 0; font-size: 15px; color: #555; line-height: 1.7; }
-	.gm-faq-a a { color: #b7780e; }
-	.gm-faq-item.open .gm-faq-a { display: block; }
+		/* FAQ */
+		.gm-faq { max-width: 800px; margin: 0 auto; }
+		.gm-faq-item { border-bottom: 1px solid #e0e0e0; }
+		.gm-faq-item:first-child { border-top: 1px solid #e0e0e0; }
+		.gm-faq-q {
+			width: 100%; background: none; border: none; text-align: left;
+			padding: 18px 40px 18px 0; font-family: 'Raleway', sans-serif;
+			font-size: 16px; font-weight: 700; color: #1c1c1c; cursor: pointer;
+			position: relative; display: block;
+		}
+		.gm-faq-q:after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 22px; color: #b7780e; font-weight: 300; }
+		.gm-faq-item.open .gm-faq-q:after { content: '−'; }
+		.gm-faq-a { display: none; padding: 0 40px 18px 0; font-size: 15px; color: #555; line-height: 1.7; }
+		.gm-faq-a a { color: #b7780e; }
+		.gm-faq-item.open .gm-faq-a { display: block; }
 
-	/* Lead form */
-	.gm-form-section { background: #1c1c1c; padding: 70px 15px; }
-	.gm-form-section h2 { color: #fff !important; font-size: 30px; font-weight: 900; text-align: center; margin: 0 0 12px; }
-	.gm-form-section h2 span { color: #b7780e !important; }
-	.gm-form-section .gm-form-sub { text-align: center; color: #aaa; font-size: 16px; margin: 0 0 36px; }
-	.gm-form-wrap { max-width: 580px; margin: 0 auto; }
-	.gm-form-wrap input[type="text"],
-	.gm-form-wrap input[type="tel"],
-	.gm-form-wrap textarea {
-		width: 100%; background: #2a2a2a; border: 1px solid #555;
-		color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;
-		padding: 14px 16px; margin-bottom: 14px; border-radius: 4px;
-		outline: none; transition: border-color .3s; box-sizing: border-box;
-	}
-	.gm-form-wrap input:focus, .gm-form-wrap textarea:focus { border-color: #b7780e; }
-	.gm-form-wrap textarea { resize: vertical; min-height: 100px; }
-	.gm-form-wrap input::placeholder, .gm-form-wrap textarea::placeholder { color: #999; }
-	.gm-form-consent { font-size: 13px; color: #aaa; margin: 4px 0 20px; display: flex; align-items: flex-start; gap: 8px; }
-	.gm-form-consent input { margin-top: 3px; accent-color: #b7780e; flex-shrink: 0; }
-	.gm-form-consent a { color: #b7780e; text-decoration: underline; }
-	.gm-form-submit .btn { color: #fff; }
+		/* Lead form */
+		.gm-form-section { background: #1c1c1c; padding: 70px 15px; }
+		.gm-form-section h2 { color: #fff !important; font-size: 30px; font-weight: 900; text-align: center; margin: 0 0 12px; }
+		.gm-form-section h2 span { color: #b7780e !important; }
+		.gm-form-section .gm-form-sub { text-align: center; color: #aaa; font-size: 16px; margin: 0 0 36px; }
+		.gm-form-wrap { max-width: 580px; margin: 0 auto; }
+		.gm-form-wrap input[type="text"],
+		.gm-form-wrap input[type="tel"],
+		.gm-form-wrap textarea {
+			width: 100%; background: #2a2a2a; border: 1px solid #555;
+			color: #fff; font-family: 'Raleway', sans-serif; font-size: 15px;
+			padding: 14px 16px; margin-bottom: 14px; border-radius: 4px;
+			outline: none; transition: border-color .3s; box-sizing: border-box;
+		}
+		.gm-form-wrap input:focus, .gm-form-wrap textarea:focus { border-color: #b7780e; }
+		.gm-form-wrap textarea { resize: vertical; min-height: 100px; }
+		.gm-form-wrap input::placeholder, .gm-form-wrap textarea::placeholder { color: #999; }
+		.gm-form-consent { font-size: 13px; color: #aaa; margin: 4px 0 20px; display: flex; align-items: flex-start; gap: 8px; }
+		.gm-form-consent input { margin-top: 3px; accent-color: #b7780e; flex-shrink: 0; }
+		.gm-form-consent a { color: #b7780e; text-decoration: underline; }
+		.gm-form-submit .btn { color: #fff; }
 
-	/* Internal link */
-	.gm-inlink { background: #f0f0f0; border-left: 4px solid #b7780e; padding: 14px 20px; border-radius: 0 6px 6px 0; margin-top: 28px; font-size: 14px; color: #444; }
-	.gm-inlink a { color: #b7780e; font-weight: 700; }
+		/* Internal link */
+		.gm-inlink { background: #f0f0f0; border-left: 4px solid #b7780e; padding: 14px 20px; border-radius: 0 6px 6px 0; margin-top: 28px; font-size: 14px; color: #444; }
+		.gm-inlink a { color: #b7780e; font-weight: 700; }
 
-	/* Toast */
-	.form-toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -60px); background: #fff; color: #333; padding: 15px 20px; border-radius: 6px; box-shadow: 0 8px 20px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: all .3s ease; z-index: 9999; font-family: 'Raleway', sans-serif; min-width: 280px; text-align: center; }
-	.form-toast--success { border-left: 4px solid #37c47a; }
-	.form-toast--error { border-left: 4px solid #e74c3c; }
-	.form-toast--show { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%); }
-	.form-hp { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+		/* Toast */
+		.form-toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -60px); background: #fff; color: #333; padding: 15px 20px; border-radius: 6px; box-shadow: 0 8px 20px rgba(0,0,0,.25); opacity: 0; pointer-events: none; transition: all .3s ease; z-index: 9999; font-family: 'Raleway', sans-serif; min-width: 280px; text-align: center; }
+		.form-toast--success { border-left: 4px solid #37c47a; }
+		.form-toast--error { border-left: 4px solid #e74c3c; }
+		.form-toast--show { opacity: 1; pointer-events: auto; transform: translate(-50%, -50%); }
+		.form-hp { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
 
-	/* Cookie */
-	#cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1c1c1c; color: #ddd; z-index: 99999; padding: 16px 20px; font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 1.6; box-shadow: 0 -4px 20px rgba(0,0,0,.4); transform: translateY(100%); transition: transform .4s ease; }
-	#cookie-banner.cookie--show { transform: translateY(0); }
-	.cookie-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-	.cookie-text { flex: 1; min-width: 200px; }
-	.cookie-text a { color: #b7780e; text-decoration: underline; }
-	.cookie-btns { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
-	.cookie-btn-ok { background: #b7780e; color: #fff; border: none; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; border-radius: 4px; }
-	.cookie-btn-ok:hover { background: #9a6409; }
-	.cookie-btn-no { background: transparent; color: #aaa; border: 1px solid #555; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; cursor: pointer; border-radius: 4px; }
-	.cookie-btn-no:hover { color: #fff; border-color: #999; }
-	@media (max-width: 600px) { .cookie-inner { flex-direction: column; } .cookie-btns { width: 100%; } .cookie-btn-ok, .cookie-btn-no { flex: 1; text-align: center; min-height: 44px; } }
+		/* Cookie */
+		#cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1c1c1c; color: #ddd; z-index: 99999; padding: 16px 20px; font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 1.6; box-shadow: 0 -4px 20px rgba(0,0,0,.4); transform: translateY(100%); transition: transform .4s ease; }
+		#cookie-banner.cookie--show { transform: translateY(0); }
+		.cookie-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+		.cookie-text { flex: 1; min-width: 200px; }
+		.cookie-text a { color: #b7780e; text-decoration: underline; }
+		.cookie-btns { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+		.cookie-btn-ok { background: #b7780e; color: #fff; border: none; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; border-radius: 4px; }
+		.cookie-btn-ok:hover { background: #9a6409; }
+		.cookie-btn-no { background: transparent; color: #aaa; border: 1px solid #555; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; cursor: pointer; border-radius: 4px; }
+		.cookie-btn-no:hover { color: #fff; border-color: #999; }
+		@media (max-width: 600px) { .cookie-inner { flex-direction: column; } .cookie-btns { width: 100%; } .cookie-btn-ok, .cookie-btn-no { flex: 1; text-align: center; min-height: 44px; } }
 
-	/* Footer */
-	#footer { background: #1c1c1c !important; }
-	.map { margin-bottom: 0; }
-	</style>
-</head>
-<body>
+		/* Footer */
+		#footer { background: #1c1c1c !important; }
+		.map { margin-bottom: 0; }
+		</style>
+	</head>
+	<body>
 
-<div id="form-toast" class="form-toast"><span class="form-toast__text"></span></div>
+	<div id="form-toast" class="form-toast"><span class="form-toast__text"></span></div>
 
-<!-- Cookie Banner -->
-<div id="cookie-banner" role="dialog" aria-label="Уведомление о cookies">
-	<div class="cookie-inner">
-		<p class="cookie-text">Мы используем cookies и сервисы аналитики, в том числе Яндекс.Метрику, чтобы улучшать работу сайта. Продолжая пользоваться сайтом или нажимая «Согласен», вы соглашаетесь с использованием cookies. Подробнее — в <a href="#" data-toggle="modal" data-target="#privacyModal" id="cookie-policy-link">Политике конфиденциальности</a>.</p>
-		<div class="cookie-btns">
-			<button class="cookie-btn-ok" id="cookie-accept">Согласен</button>
-			<button class="cookie-btn-no" id="cookie-decline">Отказаться</button>
-		</div>
-	</div>
-</div>
-
-<div id="wrapper">
-
-<!-- ===== HEADER ===== -->
-<header id="header">
-	<div class="container">
-		<nav class="main-navigation">
-			<strong class="navbar-brand"><a href="/"><img src="../images/logo.png" width="180" alt="AMF-marketing"></a></strong>
-			<a href="#" class="nav-opener"><span></span></a>
-			<div class="drop-down">
-				<ul>
-					<li><a href="/">Главная</a></li>
-					<li><a href="/#pain-points">Прожарка</a></li>
-					<li><a href="/#we-have">Морковки</a></li>
-					<li><a href="/#we-put-life">Капуста</a></li>
-					<li><a href="/#portfolio">О крольчатах</a></li>
-					<li><a href="/#our-history">О нас</a></li>
-					<li><a href="/#teams">Команда</a></li>
-					<li><a href="/#prices">Витамины</a></li>
-					<li><a href="/#partners">Зелень</a></li>
-					<li><a href="/#our-clients-say">Одни плюсы</a></li>
-					<li><a href="/#contact-us">Узнай больше!</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</header>
-
-<!-- ===== BREADCRUMBS ===== -->
-<div class="gm-breadcrumbs">
-	<div class="container">
-		<a href="/">Главная</a>
-		<span>/</span>
-		Геомаркетинг
-	</div>
-</div>
-
-<!-- ===== BLOCK 1: HERO ===== -->
-<section class="gm-hero">
-	<div class="container">
-		<h1>Геомаркетинг для бизнеса<br><span>в Яндекс Картах и 2ГИС</span></h1>
-		<p class="gm-hero-sub">Помогаем бизнесу чаще появляться в локальной выдаче, получать больше просмотров карточки и превращать их в реальные заявки.</p>
-		<div class="gm-hero-btns">
-			<a href="#lead-form" class="btn"><span>Получить разбор</span></a>
-			<a href="#lead-form" class="btn"><span>Обсудить проект</span></a>
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 2: ЧТО ТАКОЕ ГЕОМАРКЕТИНГ ===== -->
-<section class="gm-section gm-section--light">
-	<div class="container">
-		<h2>Что такое <span>геомаркетинг</span></h2>
-		<p style="text-align:center; max-width:720px; margin:0 auto 36px; font-size:16px; color:#444; line-height:1.8;">
-			Геомаркетинг — это продвижение бизнеса в геосервисах и локальной выдаче. Он помогает компании быть заметнее там, где клиент уже ищет услугу: в Яндекс Картах, 2ГИС и поиске по району или городу.
-		</p>
-		<div class="gm-cards">
-			<div class="gm-card gm-card--light">
-				<div class="gm-card-icon">🗺</div>
-				<h3>Яндекс Карты</h3>
-				<p>Карточка компании в экосистеме Яндекса — один из главных источников локальных заявок.</p>
-			</div>
-			<div class="gm-card gm-card--light">
-				<div class="gm-card-icon">📍</div>
-				<h3>2ГИС</h3>
-				<p>Отдельная большая аудитория с акцентом на навигацию и поиск услуг рядом.</p>
-			</div>
-			<div class="gm-card gm-card--light">
-				<div class="gm-card-icon">🔍</div>
-				<h3>Локальная выдача</h3>
-				<p>Попадание в блок карт в поисковой выдаче по запросам «рядом» и «в [городе]».</p>
-			</div>
-			<div class="gm-card gm-card--light">
-				<div class="gm-card-icon">⭐</div>
-				<h3>Отзывы и репутация</h3>
-				<p>Рейтинг и качество отзывов напрямую влияют на позицию карточки и доверие клиентов.</p>
-			</div>
-		</div>
-
-		<div class="gm-inlink">
-			Если вам нужно продвижение сайта в поиске — посмотрите страницу <a href="/seo-prodvizhenie/">SEO-продвижение</a>.
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 3: КОМУ ПОДХОДИТ ===== -->
-<section class="gm-section gm-section--dark">
-	<div class="container">
-		<h2>Кому подходит <span>геомаркетинг</span></h2>
-		<div class="gm-pills">
-			<div class="gm-pill">Стоматологии и клиники</div>
-			<div class="gm-pill">Автосервисы и детейлинг</div>
-			<div class="gm-pill">Строительные и ремонтные компании</div>
-			<div class="gm-pill">Салоны красоты</div>
-			<div class="gm-pill">Рестораны и кафе</div>
-			<div class="gm-pill">Локальные услуги</div>
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 4: ЧТО ВХОДИТ ===== -->
-<section class="gm-section gm-section--gray">
-	<div class="container">
-		<h2>Что входит в <span>геомаркетинг</span></h2>
-		<div class="gm-steps-light">
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">01</div>
-				<div><h3>Аудит карточек компании</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">02</div>
-				<div><h3>Анализ конкурентов в Яндекс Картах и 2ГИС</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">03</div>
-				<div><h3>Оптимизация названия, категорий и описания</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">04</div>
-				<div><h3>Добавление фото, услуг и актуальной информации</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">05</div>
-				<div><h3>Работа с отзывами и рейтингом</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">06</div>
-				<div><h3>Подготовка постов и обновлений</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">07</div>
-				<div><h3>Отслеживание звонков, переходов и маршрутов</h3></div>
-			</div>
-			<div class="gm-step-light">
-				<div class="gm-step-light-num">08</div>
-				<div><h3>Ежемесячная аналитика и рекомендации</h3></div>
+	<!-- Cookie Banner -->
+	<div id="cookie-banner" role="dialog" aria-label="Уведомление о cookies">
+		<div class="cookie-inner">
+			<p class="cookie-text">Мы используем cookies и сервисы аналитики, в том числе Яндекс.Метрику, чтобы улучшать работу сайта. Продолжая пользоваться сайтом или нажимая «Согласен», вы соглашаетесь с использованием cookies. Подробнее — в <a href="#" data-toggle="modal" data-target="#privacyModal" id="cookie-policy-link">Политике конфиденциальности</a>.</p>
+			<div class="cookie-btns">
+				<button class="cookie-btn-ok" id="cookie-accept">Согласен</button>
+				<button class="cookie-btn-no" id="cookie-decline">Отказаться</button>
 			</div>
 		</div>
 	</div>
-</section>
 
-<!-- ===== BLOCK 5: ПОЧЕМУ ТЕРЯЮТ КЛИЕНТОВ ===== -->
-<section class="gm-section gm-section--light">
-	<div class="container">
-		<h2>Почему бизнес теряет клиентов <span>без геомаркетинга</span></h2>
-		<div class="gm-problems">
-			<div class="gm-problem-card">
-				<div class="gm-problem-cause">Карточка компании заполнена не полностью</div>
-				<div class="gm-problem-effect">Клиент выбирает конкурента с более подробной карточкой</div>
-			</div>
-			<div class="gm-problem-card">
-				<div class="gm-problem-cause">Мало отзывов или они не обрабатываются</div>
-				<div class="gm-problem-effect">Ниже доверие, клиент уходит к тем, у кого рейтинг выше</div>
-			</div>
-			<div class="gm-problem-card">
-				<div class="gm-problem-cause">Нет свежих фото и обновлений</div>
-				<div class="gm-problem-effect">Карточка выглядит заброшенной — клиент сомневается</div>
-			</div>
-			<div class="gm-problem-card">
-				<div class="gm-problem-cause">Неверные категории в карточке</div>
-				<div class="gm-problem-effect">Бизнес показывается не по тем запросам, теряется целевой трафик</div>
-			</div>
-			<div class="gm-problem-card">
-				<div class="gm-problem-cause">Конкуренты выше в картах</div>
-				<div class="gm-problem-effect">Заявки и звонки уходят к ним — клиент просто не доходит до вас</div>
-			</div>
-		</div>
-	</div>
-</section>
+	<div id="wrapper">
 
-<!-- ===== BLOCK 6: КАК СТРОИТСЯ РАБОТА ===== -->
-<section class="gm-section gm-section--dark">
-	<div class="container">
-		<h2>Как мы запускаем <span>геомаркетинг</span></h2>
-		<div class="gm-steps-dark">
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">1</div>
-				<div><h3>Анализ текущей видимости</h3></div>
-			</div>
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">2</div>
-				<div><h3>Аудит карточек</h3></div>
-			</div>
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">3</div>
-				<div><h3>Анализ конкурентов</h3></div>
-			</div>
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">4</div>
-				<div><h3>Оптимизация карточек</h3></div>
-			</div>
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">5</div>
-				<div><h3>Работа с контентом и отзывами</h3></div>
-			</div>
-			<div class="gm-step-dark">
-				<div class="gm-step-dark-num">6</div>
-				<div><h3>Отчётность и рост показателей</h3></div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 7: РЕЗУЛЬТАТЫ ===== -->
-<section class="gm-section gm-section--gray">
-	<div class="container">
-		<h2>Что даёт <span>геомаркетинг бизнесу</span></h2>
-		<div class="gm-results">
-			<div class="gm-result-card">
-				<div class="gm-result-icon">📈</div>
-				<p>Рост просмотров карточки</p>
-			</div>
-			<div class="gm-result-card">
-				<div class="gm-result-icon">📞</div>
-				<p>Больше звонков из карт</p>
-			</div>
-			<div class="gm-result-card">
-				<div class="gm-result-icon">🗺</div>
-				<p>Больше построенных маршрутов</p>
-			</div>
-			<div class="gm-result-card">
-				<div class="gm-result-icon">🤝</div>
-				<p>Рост доверия и репутации</p>
-			</div>
-			<div class="gm-result-card">
-				<div class="gm-result-icon">📍</div>
-				<p>Усиление локальной видимости</p>
-			</div>
-			<div class="gm-result-card">
-				<div class="gm-result-icon">💰</div>
-				<p>Снижение зависимости от платной рекламы</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 8: FAQ ===== -->
-<section class="gm-section gm-section--light">
-	<div class="container">
-		<h2>Частые вопросы <span>о геомаркетинге</span></h2>
-		<div class="gm-faq">
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Чем геомаркетинг отличается от SEO?</button>
-				<div class="gm-faq-a">SEO продвигает сайт в поисковой выдаче Яндекса и Google. Геомаркетинг — это продвижение карточки компании в геосервисах: Яндекс Картах и 2ГИС. Оба направления дополняют друг друга и работают в разных каналах. <a href="/seo-prodvizhenie/">Подробнее о SEO-продвижении →</a></div>
-			</div>
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Через сколько виден результат?</button>
-				<div class="gm-faq-a">Первые изменения заметны уже в первый месяц: улучшается полнота карточки, появляются новые фото и посты. Рост позиций и увеличение просмотров, как правило, происходят в течение 2–3 месяцев работы.</div>
-			</div>
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Нужно ли продвигаться и в Яндекс Картах, и в 2ГИС?</button>
-				<div class="gm-faq-a">Да, это два разных сервиса с разной аудиторией. Яндекс Карты охватывают пользователей экосистемы Яндекса, 2ГИС — отдельная аудитория с акцентом на навигацию. Присутствие в обоих расширяет охват потенциальных клиентов.</div>
-			</div>
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Можно ли продвигать несколько филиалов?</button>
-				<div class="gm-faq-a">Да, мы работаем как с одной точкой, так и с сетью филиалов. Для каждой точки ведётся отдельная карточка и своя аналитика.</div>
-			</div>
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Подходит ли геомаркетинг для малого бизнеса?</button>
-				<div class="gm-faq-a">Да, геомаркетинг особенно эффективен для локального малого бизнеса — кафе, салонов, мастерских, сервисов. Это один из самых доступных инструментов привлечения клиентов из ближайшего района.</div>
-			</div>
-			<div class="gm-faq-item">
-				<button class="gm-faq-q">Что делать, если мало отзывов?</button>
-				<div class="gm-faq-a">Мы помогаем выстроить процесс получения отзывов от реальных клиентов, настраиваем работу с ответами и повышаем активность карточки. Также рекомендуем направление <a href="/prodvizhenie-v-neyrosetyah/">продвижения в нейросетях</a> для повышения упоминаемости бренда.</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- ===== BLOCK 9: ФОРМА ЗАЯВКИ ===== -->
-<section class="gm-form-section" id="lead-form">
-	<div class="container">
-		<h2>Хотите понять, как ваш бизнес<br><span>выглядит в картах?</span></h2>
-		<p class="gm-form-sub">Оставьте заявку, и мы посмотрим вашу видимость в Яндекс Картах и 2ГИС.</p>
-		<div class="gm-form-wrap">
-			<form action="../mail.php" method="post" id="gm-lead-form">
-				<input class="form-hp" type="text" name="website" tabindex="-1" autocomplete="off">
-				<input type="hidden" name="form_time" id="gm_form_time">
-				<input type="hidden" name="source" value="geo-marketing">
-				<input type="text" name="name" placeholder="Имя" required>
-				<input type="tel" name="phone" placeholder="Телефон" required>
-				<textarea name="message" placeholder="Комментарий (необязательно)" rows="3"></textarea>
-				<div class="gm-form-consent">
-					<input type="checkbox" name="consent" required id="gm-consent">
-					<label for="gm-consent">Я даю согласие на обработку персональных данных в соответствии с <a href="#" data-toggle="modal" data-target="#privacyModal">Политикой конфиденциальности</a> и <a href="#" data-toggle="modal" data-target="#consentModal">Согласием на обработку персональных данных</a></label>
+	<!-- ===== HEADER ===== -->
+	<header id="header">
+		<div class="container">
+			<nav class="main-navigation">
+				<strong class="navbar-brand"><a href="/"><img src="../images/logo.png" width="180" alt="AMF-marketing"></a></strong>
+				<a href="#" class="nav-opener"><span></span></a>
+				<div class="drop-down">
+					<ul>
+						<li><a href="/">Главная</a></li>
+						<li><a href="/#pain-points">Прожарка</a></li>
+						<li><a href="/#we-have">Морковки</a></li>
+						<li><a href="/#we-put-life">Капуста</a></li>
+						<li><a href="/#portfolio">О крольчатах</a></li>
+						<li><a href="/#our-history">О нас</a></li>
+						<li><a href="/#teams">Команда</a></li>
+						<li><a href="/#prices">Витамины</a></li>
+						<li><a href="/#partners">Зелень</a></li>
+						<li><a href="/#our-clients-say">Одни плюсы</a></li>
+						<li><a href="/#contact-us">Узнай больше!</a></li>
+					</ul>
 				</div>
-				<div class="gm-form-submit">
-					<button type="submit" class="btn"><span>Получить разбор</span></button>
-				</div>
-			</form>
+			</nav>
 		</div>
-	</div>
-</section>
+	</header>
 
-<!-- ===== FOOTER ===== -->
-<footer id="footer" class="section frame-box">
-	<div class="container footer-box">
-		<div class="row">
-			<div class="col-lg-3 col-md-3">
-				<i class="icon-phone"></i>
-				<div class="holder"><a href="tel:+79231128754">+7 923 112‒87‒54</a></div>
-			</div>
-			<div class="col-lg-3 col-md-3">
-				<i class="icon-map-pin"></i>
-				<div class="holder"><address>Новосибирск, Димитрова проспект, 7 — 614 офис; 6 этаж</address></div>
-			</div>
-			<div class="col-lg-3 col-md-3">
-				<i class="icon-global"></i>
-				<div class="holder"><a href="mailto:a.usenko@amf-marketing.ru">a.usenko@amf-marketing.ru</a></div>
-			</div>
-			<div class="col-lg-3 col-md-3">
-				<i class="icon-telegram">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="#b7780e" width="32px" height="32px" viewBox="0 0 256 256"><path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676Z"/></svg></i>
-				<div class="holder telegram">
-					<a href="https://t.me/AMFmarketing" target="_blank">Канал агентства</a>
-					<a href="https://t.me/AMedia_Factory_bot" target="_blank">Наш Telegram-бот</a>
-				</div>
-			</div>
+	<!-- ===== BREADCRUMBS ===== -->
+	<div class="gm-breadcrumbs">
+		<div class="container">
+			<a href="/">Главная</a>
+			<span>/</span>
+			Геомаркетинг
 		</div>
 	</div>
-	<div class="map">
-		<iframe src="https://yandex.ru/map-widget/v1/?ll=82.912376%2C55.034731&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzA5ODQ5NxJM0KDQvtGB0YHQuNGPLCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQv9GA0L7RgdC_0LXQutGCINCU0LjQvNC40YLRgNC-0LLQsCwgNyIKDcjSpUIVmyNcQg%2C%2C&z=16.39" width="100%" height="461" frameborder="1" allowfullscreen="false" style="position:relative;"></iframe>
-	</div>
-	<div class="container" style="margin-top:0;">
-		<div style="display:flex; flex-direction:column; align-items:center; padding:10px 0 6px; text-align:center;">
-			<img src="../images/logo4.png" alt="AMF-marketing" style="margin-bottom:8px; max-height:40px; width:auto;">
-			<p style="margin:0; font-size:13px; color:#aaa; line-height:2;">
-				&copy; Copyright 2018-2026 — АМФ-маркетинг
-				<br>
-				<a href="#" data-toggle="modal" data-target="#privacyModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Политика конфиденциальности</a>
-				&nbsp;·&nbsp;
-				<a href="#" data-toggle="modal" data-target="#consentModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Согласие на обработку персональных данных</a>
-				&nbsp;·&nbsp;
-				<a href="#" id="cookie-settings-link" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Настройки cookies</a>
+
+	<!-- ===== BLOCK 1: HERO ===== -->
+	<section class="gm-hero">
+		<div class="container">
+			<h1>Геомаркетинг для бизнеса<br><span>в Яндекс Картах и 2ГИС</span></h1>
+			<p class="gm-hero-sub">Помогаем бизнесу чаще появляться в локальной выдаче, получать больше просмотров карточки и превращать их в реальные заявки.</p>
+			<div class="gm-hero-btns">
+				<a href="#lead-form" class="btn"><span>Получить разбор</span></a>
+				<a href="#lead-form" class="btn"><span>Обсудить проект</span></a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== BLOCK 2: ЧТО ТАКОЕ ГЕОМАРКЕТИНГ ===== -->
+	<section class="gm-section gm-section--light">
+		<div class="container">
+			<h2>Что такое <span>геомаркетинг</span></h2>
+			<p style="text-align:center; max-width:720px; margin:0 auto 36px; font-size:16px; color:#444; line-height:1.8;">
+				Геомаркетинг — это продвижение бизнеса в геосервисах и локальной выдаче. Он помогает компании быть заметнее там, где клиент уже ищет услугу: в Яндекс Картах, 2ГИС и поиске по району или городу.
 			</p>
-		</div>
-	</div>
-</footer>
-
-</div><!-- /wrapper -->
-
-<!-- ===== MODAL: Privacy Policy ===== -->
-<style>
-#privacyModal .modal-dialog { margin: 20px auto; width: auto; max-width: 760px; }
-#privacyModal .modal-body { max-height: 65vh; overflow-y: auto; }
-#consentModal .modal-dialog { margin: 20px auto; width: auto; max-width: 760px; }
-#consentModal .modal-body { max-height: 65vh; overflow-y: auto; }
-@media (max-width: 767px) {
-	#privacyModal .modal-dialog, #consentModal .modal-dialog { margin: 10px; }
-}
-</style>
-
-<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content" style="border-radius:10px; overflow:hidden;">
-			<div class="modal-header" style="background:#1c1c1c; border-bottom:3px solid #b7780e; padding:16px 20px; position:relative; text-align:center;">
-				<h4 style="color:#fff; font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; margin:0; padding:0 40px;">Политика конфиденциальности</h4>
-				<button type="button" data-dismiss="modal" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:32px; line-height:1; cursor:pointer;">&times;</button>
+			<div class="gm-cards">
+				<div class="gm-card gm-card--light">
+					<div class="gm-card-icon">🗺</div>
+					<h3>Яндекс Карты</h3>
+					<p>Карточка компании в экосистеме Яндекса — один из главных источников локальных заявок.</p>
+				</div>
+				<div class="gm-card gm-card--light">
+					<div class="gm-card-icon">📍</div>
+					<h3>2ГИС</h3>
+					<p>Отдельная большая аудитория с акцентом на навигацию и поиск услуг рядом.</p>
+				</div>
+				<div class="gm-card gm-card--light">
+					<div class="gm-card-icon">🔍</div>
+					<h3>Локальная выдача</h3>
+					<p>Попадание в блок карт в поисковой выдаче по запросам «рядом» и «в [городе]».</p>
+				</div>
+				<div class="gm-card gm-card--light">
+					<div class="gm-card-icon">⭐</div>
+					<h3>Отзывы и репутация</h3>
+					<p>Рейтинг и качество отзывов напрямую влияют на позицию карточки и доверие клиентов.</p>
+				</div>
 			</div>
-			<div class="modal-body" style="background:#fff; padding:30px 40px; color:#222; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.8;">
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:0 0 10px;">1. Общие положения</h5>
-				<p>Настоящая политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта <strong>amf-marketing.ru</strong>.</p>
-				<p>Оператором персональных данных является: ИП Воронин Артём Александрович, ИНН: 540402715350, ОГРНИП: 325547600186131. Адрес: 630079, г. Новосибирск, ул. Троллейная, д. 41, кв. 76</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">2. Какие данные мы собираем</h5>
-				<p>При заполнении форм: имя, телефон, email и иные данные формы. Автоматически: IP-адрес, cookies, данные браузера и устройства.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">3. Цели обработки данных</h5>
-				<p>Связь с пользователем, обработка заявок, предоставление услуг, отправка предложений, улучшение сайта.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">4. Передача данных третьим лицам</h5>
-				<p>Данные не передаются третьим лицам, кроме случаев необходимых для оказания услуг или требуемых законодательством РФ.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">5. Хранение и защита данных</h5>
-				<p>Оператор принимает необходимые меры для защиты данных от несанкционированного доступа. Персональные данные хранятся не дольше, чем необходимо для достижения целей обработки, либо в сроки, установленные законодательством РФ.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">6. Использование cookies и сервисов аналитики</h5>
-				<p>Сайт использует файлы cookies и сервисы веб-аналитики, в том числе Яндекс.Метрику. Эти инструменты помогают анализировать посещаемость, действия пользователей и эффективность рекламы.</p>
-				<p>Cookies могут содержать техническую информацию о браузере, устройстве, действиях на сайте и источнике перехода. Пользователь может ограничить cookies в настройках браузера или через ссылку «Настройки cookies» на сайте.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">7. Права пользователя</h5>
-				<p>Пользователь вправе запросить информацию о данных, потребовать изменение или удаление, отозвать согласие. Запрос направлять на <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">8. Изменения политики</h5>
-				<p>Актуальная версия всегда доступна на данной странице.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">9. Контактная информация</h5>
-				<p>Email: <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a> · Тел: <a href="tel:+79231128754" style="color:#b7780e;">+7 923 112-87-54</a></p>
-				<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 19.05.2026</p>
+
+			<div class="gm-inlink">
+				Если вам нужно продвижение сайта в поиске — посмотрите страницу <a href="/seo-prodvizhenie/">SEO-продвижение</a>.
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
 
-<!-- ===== MODAL: Consent ===== -->
-<div class="modal fade" id="consentModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content" style="border-radius:10px; overflow:hidden;">
-			<div class="modal-header" style="background:#1c1c1c; border-bottom:3px solid #b7780e; padding:16px 20px; position:relative; text-align:center;">
-				<h4 style="color:#fff; font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; margin:0; padding:0 40px;">Согласие на обработку персональных данных</h4>
-				<button type="button" data-dismiss="modal" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:32px; line-height:1; cursor:pointer;">&times;</button>
-			</div>
-			<div class="modal-body" style="background:#fff; padding:30px 40px; color:#222; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.8;">
-				<p>Пользователь, оставляя заявку на сайте <strong>amf-marketing.ru</strong>, даёт согласие ИП Воронину Артёму Александровичу на обработку персональных данных.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Какие данные обрабатываются</h5>
-				<p>Имя, номер телефона, email, иные данные формы.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Цели обработки</h5>
-				<p>Связь с пользователем, обработка заявок, оказание услуг, направление предложений.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Срок действия</h5>
-				<p>Согласие действует до момента его отзыва пользователем.</p>
-				<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Отзыв согласия</h5>
-				<p>Направить запрос на <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
-				<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата обновления: 19.05.2026</p>
+	<!-- ===== BLOCK 3: КОМУ ПОДХОДИТ ===== -->
+	<section class="gm-section gm-section--dark">
+		<div class="container">
+			<h2>Кому подходит <span>геомаркетинг</span></h2>
+			<div class="gm-pills">
+				<div class="gm-pill">Стоматологии и клиники</div>
+				<div class="gm-pill">Автосервисы и детейлинг</div>
+				<div class="gm-pill">Строительные и ремонтные компании</div>
+				<div class="gm-pill">Салоны красоты</div>
+				<div class="gm-pill">Рестораны и кафе</div>
+				<div class="gm-pill">Локальные услуги</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
 
-<!-- ===== SCRIPTS ===== -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>')</script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery.main.min.js"></script>
+	<!-- ===== BLOCK 4: ЧТО ВХОДИТ ===== -->
+	<section class="gm-section gm-section--gray">
+		<div class="container">
+			<h2>Что входит в <span>геомаркетинг</span></h2>
+			<div class="gm-steps-light">
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">01</div>
+					<div><h3>Аудит карточек компании</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">02</div>
+					<div><h3>Анализ конкурентов в Яндекс Картах и 2ГИС</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">03</div>
+					<div><h3>Оптимизация названия, категорий и описания</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">04</div>
+					<div><h3>Добавление фото, услуг и актуальной информации</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">05</div>
+					<div><h3>Работа с отзывами и рейтингом</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">06</div>
+					<div><h3>Подготовка постов и обновлений</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">07</div>
+					<div><h3>Отслеживание звонков, переходов и маршрутов</h3></div>
+				</div>
+				<div class="gm-step-light">
+					<div class="gm-step-light-num">08</div>
+					<div><h3>Ежемесячная аналитика и рекомендации</h3></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<script>
-$(function () {
-	// Toast
-	function showToast(msg, type) {
-		var $t = $('#form-toast');
-		$t.removeClass('form-toast--success form-toast--error');
-		if (type === 'success') $t.addClass('form-toast--success');
-		if (type === 'error') $t.addClass('form-toast--error');
-		$t.find('.form-toast__text').text(msg);
-		$t.addClass('form-toast--show');
-		setTimeout(function(){ $t.removeClass('form-toast--show'); }, 4000);
+	<!-- ===== BLOCK 5: ПОЧЕМУ ТЕРЯЮТ КЛИЕНТОВ ===== -->
+	<section class="gm-section gm-section--light">
+		<div class="container">
+			<h2>Почему бизнес теряет клиентов <span>без геомаркетинга</span></h2>
+			<div class="gm-problems">
+				<div class="gm-problem-card">
+					<div class="gm-problem-cause">Карточка компании заполнена не полностью</div>
+					<div class="gm-problem-effect">Клиент выбирает конкурента с более подробной карточкой</div>
+				</div>
+				<div class="gm-problem-card">
+					<div class="gm-problem-cause">Мало отзывов или они не обрабатываются</div>
+					<div class="gm-problem-effect">Ниже доверие, клиент уходит к тем, у кого рейтинг выше</div>
+				</div>
+				<div class="gm-problem-card">
+					<div class="gm-problem-cause">Нет свежих фото и обновлений</div>
+					<div class="gm-problem-effect">Карточка выглядит заброшенной — клиент сомневается</div>
+				</div>
+				<div class="gm-problem-card">
+					<div class="gm-problem-cause">Неверные категории в карточке</div>
+					<div class="gm-problem-effect">Бизнес показывается не по тем запросам, теряется целевой трафик</div>
+				</div>
+				<div class="gm-problem-card">
+					<div class="gm-problem-cause">Конкуренты выше в картах</div>
+					<div class="gm-problem-effect">Заявки и звонки уходят к ним — клиент просто не доходит до вас</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== BLOCK 6: КАК СТРОИТСЯ РАБОТА ===== -->
+	<section class="gm-section gm-section--dark">
+		<div class="container">
+			<h2>Как мы запускаем <span>геомаркетинг</span></h2>
+			<div class="gm-steps-dark">
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">1</div>
+					<div><h3>Анализ текущей видимости</h3></div>
+				</div>
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">2</div>
+					<div><h3>Аудит карточек</h3></div>
+				</div>
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">3</div>
+					<div><h3>Анализ конкурентов</h3></div>
+				</div>
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">4</div>
+					<div><h3>Оптимизация карточек</h3></div>
+				</div>
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">5</div>
+					<div><h3>Работа с контентом и отзывами</h3></div>
+				</div>
+				<div class="gm-step-dark">
+					<div class="gm-step-dark-num">6</div>
+					<div><h3>Отчётность и рост показателей</h3></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== BLOCK 7: РЕЗУЛЬТАТЫ ===== -->
+	<section class="gm-section gm-section--gray">
+		<div class="container">
+			<h2>Что даёт <span>геомаркетинг бизнесу</span></h2>
+			<div class="gm-results">
+				<div class="gm-result-card">
+					<div class="gm-result-icon">📈</div>
+					<p>Рост просмотров карточки</p>
+				</div>
+				<div class="gm-result-card">
+					<div class="gm-result-icon">📞</div>
+					<p>Больше звонков из карт</p>
+				</div>
+				<div class="gm-result-card">
+					<div class="gm-result-icon">🗺</div>
+					<p>Больше построенных маршрутов</p>
+				</div>
+				<div class="gm-result-card">
+					<div class="gm-result-icon">🤝</div>
+					<p>Рост доверия и репутации</p>
+				</div>
+				<div class="gm-result-card">
+					<div class="gm-result-icon">📍</div>
+					<p>Усиление локальной видимости</p>
+				</div>
+				<div class="gm-result-card">
+					<div class="gm-result-icon">💰</div>
+					<p>Снижение зависимости от платной рекламы</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== BLOCK 8: FAQ ===== -->
+	<section class="gm-section gm-section--light">
+		<div class="container">
+			<h2>Частые вопросы <span>о геомаркетинге</span></h2>
+			<div class="gm-faq">
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Чем геомаркетинг отличается от SEO?</button>
+					<div class="gm-faq-a">SEO продвигает сайт в поисковой выдаче Яндекса и Google. Геомаркетинг — это продвижение карточки компании в геосервисах: Яндекс Картах и 2ГИС. Оба направления дополняют друг друга и работают в разных каналах. <a href="/seo-prodvizhenie/">Подробнее о SEO-продвижении →</a></div>
+				</div>
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Через сколько виден результат?</button>
+					<div class="gm-faq-a">Первые изменения заметны уже в первый месяц: улучшается полнота карточки, появляются новые фото и посты. Рост позиций и увеличение просмотров, как правило, происходят в течение 2–3 месяцев работы.</div>
+				</div>
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Нужно ли продвигаться и в Яндекс Картах, и в 2ГИС?</button>
+					<div class="gm-faq-a">Да, это два разных сервиса с разной аудиторией. Яндекс Карты охватывают пользователей экосистемы Яндекса, 2ГИС — отдельная аудитория с акцентом на навигацию. Присутствие в обоих расширяет охват потенциальных клиентов.</div>
+				</div>
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Можно ли продвигать несколько филиалов?</button>
+					<div class="gm-faq-a">Да, мы работаем как с одной точкой, так и с сетью филиалов. Для каждой точки ведётся отдельная карточка и своя аналитика.</div>
+				</div>
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Подходит ли геомаркетинг для малого бизнеса?</button>
+					<div class="gm-faq-a">Да, геомаркетинг особенно эффективен для локального малого бизнеса — кафе, салонов, мастерских, сервисов. Это один из самых доступных инструментов привлечения клиентов из ближайшего района.</div>
+				</div>
+				<div class="gm-faq-item">
+					<button class="gm-faq-q">Что делать, если мало отзывов?</button>
+					<div class="gm-faq-a">Мы помогаем выстроить процесс получения отзывов от реальных клиентов, настраиваем работу с ответами и повышаем активность карточки. Также рекомендуем направление <a href="/prodvizhenie-v-neyrosetyah/">продвижения в нейросетях</a> для повышения упоминаемости бренда.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== BLOCK 9: ФОРМА ЗАЯВКИ ===== -->
+	<section class="gm-form-section" id="lead-form">
+		<div class="container">
+			<h2>Хотите понять, как ваш бизнес<br><span>выглядит в картах?</span></h2>
+			<p class="gm-form-sub">Оставьте заявку, и мы посмотрим вашу видимость в Яндекс Картах и 2ГИС.</p>
+			<div class="gm-form-wrap">
+				<form action="../mail.php" method="post" id="gm-lead-form">
+					<input class="form-hp" type="text" name="website" tabindex="-1" autocomplete="off">
+					<input type="hidden" name="form_time" id="gm_form_time">
+					<input type="hidden" name="source" value="geo-marketing">
+					<input type="text" name="name" placeholder="Имя" required>
+					<input type="tel" name="phone" placeholder="Телефон" required>
+					<textarea name="message" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+					<div class="gm-form-consent">
+						<input type="checkbox" name="consent" required id="gm-consent">
+						<label for="gm-consent">Я даю согласие на обработку персональных данных в соответствии с <a href="#" data-toggle="modal" data-target="#privacyModal">Политикой конфиденциальности</a> и <a href="#" data-toggle="modal" data-target="#consentModal">Согласием на обработку персональных данных</a></label>
+					</div>
+					<div class="gm-form-submit">
+						<button type="submit" class="btn"><span>Получить разбор</span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- ===== FOOTER ===== -->
+	<footer id="footer" class="section frame-box">
+		<div class="container footer-box">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<i class="icon-phone"></i>
+					<div class="holder"><a href="tel:+79231128754">+7 923 112‒87‒54</a></div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<i class="icon-map-pin"></i>
+					<div class="holder"><address>Новосибирск, Димитрова проспект, 7 — 614 офис; 6 этаж</address></div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<i class="icon-global"></i>
+					<div class="holder"><a href="mailto:a.usenko@amf-marketing.ru">a.usenko@amf-marketing.ru</a></div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<i class="icon-telegram">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="#b7780e" width="32px" height="32px" viewBox="0 0 256 256"><path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676Z"/></svg></i>
+					<div class="holder telegram">
+						<a href="https://t.me/AMFmarketing" target="_blank">Канал агентства</a>
+						<a href="https://t.me/AMedia_Factory_bot" target="_blank">Наш Telegram-бот</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+			<iframe src="https://yandex.ru/map-widget/v1/?ll=82.912376%2C55.034731&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzA5ODQ5NxJM0KDQvtGB0YHQuNGPLCDQndC-0LLQvtGB0LjQsdC40YDRgdC6LCDQv9GA0L7RgdC_0LXQutGCINCU0LjQvNC40YLRgNC-0LLQsCwgNyIKDcjSpUIVmyNcQg%2C%2C&z=16.39" width="100%" height="461" frameborder="1" allowfullscreen="false" style="position:relative;"></iframe>
+		</div>
+		<div class="container" style="margin-top:0;">
+			<div style="display:flex; flex-direction:column; align-items:center; padding:10px 0 6px; text-align:center;">
+				<img src="../images/logo4.png" alt="AMF-marketing" style="margin-bottom:8px; max-height:40px; width:auto;">
+				<p style="margin:0; font-size:13px; color:#aaa; line-height:2;">
+					&copy; Copyright 2018-2026 — АМФ-маркетинг
+					<br>
+					<a href="#" data-toggle="modal" data-target="#privacyModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Политика конфиденциальности</a>
+					&nbsp;·&nbsp;
+					<a href="#" data-toggle="modal" data-target="#consentModal" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Согласие на обработку персональных данных</a>
+					&nbsp;·&nbsp;
+					<a href="#" id="cookie-settings-link" style="color:#aaa; text-decoration:none;" onmouseover="this.style.color='#b7780e'" onmouseout="this.style.color='#aaa'">Настройки cookies</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	</div><!-- /wrapper -->
+
+	<!-- ===== MODAL: Privacy Policy ===== -->
+	<style>
+	#privacyModal .modal-dialog { margin: 20px auto; width: auto; max-width: 760px; }
+	#privacyModal .modal-body { max-height: 65vh; overflow-y: auto; }
+	#consentModal .modal-dialog { margin: 20px auto; width: auto; max-width: 760px; }
+	#consentModal .modal-body { max-height: 65vh; overflow-y: auto; }
+	@media (max-width: 767px) {
+		#privacyModal .modal-dialog, #consentModal .modal-dialog { margin: 10px; }
 	}
+	</style>
 
-	var pageLoadTime = Date.now();
-	$('#gm_form_time').val(pageLoadTime);
+	<div class="modal fade" id="privacyModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content" style="border-radius:10px; overflow:hidden;">
+				<div class="modal-header" style="background:#1c1c1c; border-bottom:3px solid #b7780e; padding:16px 20px; position:relative; text-align:center;">
+					<h4 style="color:#fff; font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; margin:0; padding:0 40px;">Политика конфиденциальности</h4>
+					<button type="button" data-dismiss="modal" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:32px; line-height:1; cursor:pointer;">&times;</button>
+				</div>
+				<div class="modal-body" style="background:#fff; padding:30px 40px; color:#222; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.8;">
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:0 0 10px;">1. Общие положения</h5>
+					<p>Настоящая политика конфиденциальности определяет порядок обработки и защиты персональных данных пользователей сайта <strong>amf-marketing.ru</strong>.</p>
+					<p>Оператором персональных данных является: ИП Воронин Артём Александрович, ИНН: 540402715350, ОГРНИП: 325547600186131. Адрес: 630079, г. Новосибирск, ул. Троллейная, д. 41, кв. 76</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">2. Какие данные мы собираем</h5>
+					<p>При заполнении форм: имя, телефон, email и иные данные формы. Автоматически: IP-адрес, cookies, данные браузера и устройства.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">3. Цели обработки данных</h5>
+					<p>Связь с пользователем, обработка заявок, предоставление услуг, отправка предложений, улучшение сайта.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">4. Передача данных третьим лицам</h5>
+					<p>Данные не передаются третьим лицам, кроме случаев необходимых для оказания услуг или требуемых законодательством РФ.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">5. Хранение и защита данных</h5>
+					<p>Оператор принимает необходимые меры для защиты данных от несанкционированного доступа. Персональные данные хранятся не дольше, чем необходимо для достижения целей обработки, либо в сроки, установленные законодательством РФ.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">6. Использование cookies и сервисов аналитики</h5>
+					<p>Сайт использует файлы cookies и сервисы веб-аналитики, в том числе Яндекс.Метрику. Эти инструменты помогают анализировать посещаемость, действия пользователей и эффективность рекламы.</p>
+					<p>Cookies могут содержать техническую информацию о браузере, устройстве, действиях на сайте и источнике перехода. Пользователь может ограничить cookies в настройках браузера или через ссылку «Настройки cookies» на сайте.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">7. Права пользователя</h5>
+					<p>Пользователь вправе запросить информацию о данных, потребовать изменение или удаление, отозвать согласие. Запрос направлять на <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">8. Изменения политики</h5>
+					<p>Актуальная версия всегда доступна на данной странице.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">9. Контактная информация</h5>
+					<p>Email: <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a> · Тел: <a href="tel:+79231128754" style="color:#b7780e;">+7 923 112-87-54</a></p>
+					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата последнего обновления: 19.05.2026</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	$('#gm-lead-form').on('submit', function(e) {
-		e.preventDefault();
-		var $form = $(this);
-		if ($form.find('input[name="website"]').val() !== '') { showToast('Спасибо!', 'success'); return; }
-		var ft = parseInt($form.find('input[name="form_time"]').val(), 10);
-		if (!ft || (Date.now() - ft) < 3000) { showToast('Пожалуйста, заполните форму внимательно', 'error'); return; }
-		$.ajax({
-			url: $form.attr('action'), method: 'POST', data: $form.serialize(), dataType: 'json',
-			success: function(res) {
-				if (res.success) { showToast(res.message || 'Спасибо, заявка отправлена!', 'success'); $form[0].reset(); }
-				else { showToast(res.message || 'Ошибка отправки', 'error'); }
-			},
-			error: function() { showToast('Ошибка соединения с сервером', 'error'); }
+	<!-- ===== MODAL: Consent ===== -->
+	<div class="modal fade" id="consentModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content" style="border-radius:10px; overflow:hidden;">
+				<div class="modal-header" style="background:#1c1c1c; border-bottom:3px solid #b7780e; padding:16px 20px; position:relative; text-align:center;">
+					<h4 style="color:#fff; font-family:'Raleway',sans-serif; font-weight:700; font-size:18px; margin:0; padding:0 40px;">Согласие на обработку персональных данных</h4>
+					<button type="button" data-dismiss="modal" style="position:absolute; top:50%; right:16px; transform:translateY(-50%); background:none; border:none; color:#fff; font-size:32px; line-height:1; cursor:pointer;">&times;</button>
+				</div>
+				<div class="modal-body" style="background:#fff; padding:30px 40px; color:#222; font-family:'Raleway',sans-serif; font-size:14px; line-height:1.8;">
+					<p>Пользователь, оставляя заявку на сайте <strong>amf-marketing.ru</strong>, даёт согласие ИП Воронину Артёму Александровичу на обработку персональных данных.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Какие данные обрабатываются</h5>
+					<p>Имя, номер телефона, email, иные данные формы.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Цели обработки</h5>
+					<p>Связь с пользователем, обработка заявок, оказание услуг, направление предложений.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Срок действия</h5>
+					<p>Согласие действует до момента его отзыва пользователем.</p>
+					<h5 style="font-weight:700; font-size:15px; color:#b7780e; margin:20px 0 10px;">Отзыв согласия</h5>
+					<p>Направить запрос на <a href="mailto:a.usenko@amf-marketing.ru" style="color:#b7780e;">a.usenko@amf-marketing.ru</a></p>
+					<p style="margin-top:30px; padding-top:20px; border-top:1px solid #eee; font-size:12px; color:#999;">Дата обновления: 19.05.2026</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== SCRIPTS ===== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../js/jquery-3.1.1.min.js"><\/script>')</script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.main.min.js"></script>
+
+	<script>
+	$(function () {
+		// Toast
+		function showToast(msg, type) {
+			var $t = $('#form-toast');
+			$t.removeClass('form-toast--success form-toast--error');
+			if (type === 'success') $t.addClass('form-toast--success');
+			if (type === 'error') $t.addClass('form-toast--error');
+			$t.find('.form-toast__text').text(msg);
+			$t.addClass('form-toast--show');
+			setTimeout(function(){ $t.removeClass('form-toast--show'); }, 4000);
+		}
+
+		var pageLoadTime = Date.now();
+		$('#gm_form_time').val(pageLoadTime);
+
+		$('#gm-lead-form').on('submit', function(e) {
+			e.preventDefault();
+			var $form = $(this);
+			if ($form.find('input[name="website"]').val() !== '') { showToast('Спасибо!', 'success'); return; }
+			var ft = parseInt($form.find('input[name="form_time"]').val(), 10);
+			if (!ft || (Date.now() - ft) < 3000) { showToast('Пожалуйста, заполните форму внимательно', 'error'); return; }
+			$.ajax({
+				url: $form.attr('action'), method: 'POST', data: $form.serialize(), dataType: 'json',
+				success: function(res) {
+					if (res.success) { showToast(res.message || 'Спасибо, заявка отправлена!', 'success'); $form[0].reset(); }
+					else { showToast(res.message || 'Ошибка отправки', 'error'); }
+				},
+				error: function() { showToast('Ошибка соединения с сервером', 'error'); }
+			});
 		});
 	});
-});
-</script>
+	</script>
 
-<!-- Smooth scroll for hero buttons -->
-<script>
-document.querySelectorAll('.gm-hero-btns a[href="#lead-form"]').forEach(function(btn) {
-	btn.addEventListener('click', function(e) {
-		e.preventDefault();
-		var target = document.getElementById('lead-form');
-		if (target) {
-			$('html, body').animate({ scrollTop: $(target).offset().top }, 1000, 'swing');
+	<!-- Smooth scroll for hero buttons -->
+	<script>
+	document.querySelectorAll('.gm-hero-btns a[href="#lead-form"]').forEach(function(btn) {
+		btn.addEventListener('click', function(e) {
+			e.preventDefault();
+			var target = document.getElementById('lead-form');
+			if (target) {
+				$('html, body').animate({ scrollTop: $(target).offset().top }, 1000, 'swing');
+			}
+		});
+	});
+	</script>
+
+	<!-- FAQ accordion -->
+	<script>
+	document.querySelectorAll('.gm-faq-q').forEach(function(btn) {
+		btn.addEventListener('click', function() {
+			var item = this.closest('.gm-faq-item');
+			var isOpen = item.classList.contains('open');
+			document.querySelectorAll('.gm-faq-item').forEach(function(i) { i.classList.remove('open'); });
+			if (!isOpen) item.classList.add('open');
+		});
+	});
+	</script>
+
+	<!-- Cookie Banner -->
+	<script>
+	(function () {
+		var KEY = 'amf_cookie_choice';
+		var banner = document.getElementById('cookie-banner');
+		function getChoice() { return localStorage.getItem(KEY); }
+		function saveChoice(val) {
+			localStorage.setItem(KEY, val);
+			var d = new Date(); d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
+			document.cookie = KEY + '=' + val + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
 		}
-	});
-});
-</script>
+		function showBanner() { setTimeout(function(){ banner.classList.add('cookie--show'); }, 800); }
+		function hideBanner() { banner.classList.remove('cookie--show'); }
+		if (!getChoice()) showBanner();
+		document.getElementById('cookie-accept').addEventListener('click', function(){ saveChoice('accepted'); hideBanner(); });
+		document.getElementById('cookie-decline').addEventListener('click', function(){ saveChoice('declined'); hideBanner(); });
+		document.getElementById('cookie-settings-link').addEventListener('click', function(e){
+			e.preventDefault();
+			localStorage.removeItem(KEY);
+			document.cookie = KEY + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+			showBanner();
+		});
+		document.getElementById('cookie-policy-link').addEventListener('click', function(){ hideBanner(); });
+	})();
+	</script>
 
-<!-- FAQ accordion -->
-<script>
-document.querySelectorAll('.gm-faq-q').forEach(function(btn) {
-	btn.addEventListener('click', function() {
-		var item = this.closest('.gm-faq-item');
-		var isOpen = item.classList.contains('open');
-		document.querySelectorAll('.gm-faq-item').forEach(function(i) { i.classList.remove('open'); });
-		if (!isOpen) item.classList.add('open');
-	});
-});
-</script>
-
-<!-- Cookie Banner -->
-<script>
-(function () {
-	var KEY = 'amf_cookie_choice';
-	var banner = document.getElementById('cookie-banner');
-	function getChoice() { return localStorage.getItem(KEY); }
-	function saveChoice(val) {
-		localStorage.setItem(KEY, val);
-		var d = new Date(); d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
-		document.cookie = KEY + '=' + val + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
-	}
-	function showBanner() { setTimeout(function(){ banner.classList.add('cookie--show'); }, 800); }
-	function hideBanner() { banner.classList.remove('cookie--show'); }
-	if (!getChoice()) showBanner();
-	document.getElementById('cookie-accept').addEventListener('click', function(){ saveChoice('accepted'); hideBanner(); });
-	document.getElementById('cookie-decline').addEventListener('click', function(){ saveChoice('declined'); hideBanner(); });
-	document.getElementById('cookie-settings-link').addEventListener('click', function(e){
-		e.preventDefault();
-		localStorage.removeItem(KEY);
-		document.cookie = KEY + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-		showBanner();
-	});
-	document.getElementById('cookie-policy-link').addEventListener('click', function(){ hideBanner(); });
-})();
-</script>
-
-</body>
-</html>
+	</body>
+	</html>
