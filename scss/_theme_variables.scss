@@ -1,0 +1,77 @@
+/* == Custom variables == */
+
+// Colors
+$brand-primary: #ff7105;
+
+$brand-white: #fff;
+$brand-black: #000;
+$brand-gray: #8c8c8c;
+$brand-green: #b1eb00;
+$brand-blue: #53bbf4;
+$brand-red: #ff432e;
+$brand-red-dark: #6e2d1f;
+$brand-yellow: #b7780e;
+$brand-light-yellow: #eaa407;
+$brand-light-gray: #fafafa;
+
+
+// Font
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Pacifico', cursive;
+
+$base-font-size: 14px;
+$base-line-height: 1.6;
+$base-font-family: $font-primary;
+$headings-font-family: $font-primary;
+$headings-font-weight: 900;
+$headings-line-height: 1.428571429;
+
+// Global text color on `<body>`.
+$text-color: $brand-gray;
+
+// Global textual link color.
+$base-link-color: $brand-primary;
+$base-link-hover-color: darken($base-link-color, 50%);
+$base-link-hover-decoration: none;
+
+// Buttons
+$border-radius-base: 3px;
+$btn-primary-color: $brand-white;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+$btn-border-radius-base: $border-radius-base;
+
+// Animation.
+$animation-speed: 0.4s;
+
+//== Navbar
+// Basics of a navbar
+$navbar-height: auto;
+$navbar-default-bg: none;
+$navbar-default-border: none;
+
+// Navbar links
+$navbar-default-link-color: $brand-white;
+$navbar-default-link-hover-color: $brand-primary;
+$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-active-color: $brand-primary;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-link-disabled-color: transparent;
+$navbar-default-link-disabled-bg: transparent;
+$navbar-padding-horizontal: 0;
+$navbar-padding-vertical: 0;
+$nav-link-padding: 0;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-default-toggle-icon-bar-bg: $brand-white;
+$navbar-default-toggle-border-color: $brand-white;
+
+// Forms
+$input-border: $brand-primary;
+$input-border-focus: $brand-primary;
+$form-group-margin-bottom: 30px;
+
+// Overrides
+$grid-gutter-width: 40px;
+$padding-base-vertical: 15px;

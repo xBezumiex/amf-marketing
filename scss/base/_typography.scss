@@ -1,0 +1,117 @@
+// Typography
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+	font-family: $headings-font-family;
+	font-weight: 900;
+	color: $brand-black;
+	margin: 0 0 20px;
+}
+
+.title-page h1, .title-page .h1,
+h2, .h2{
+	font-size: 50px;
+	text-align: center;
+	margin: 0 0 60px;
+	
+	span{
+		display: block;
+		position: relative;
+		text-align: left;
+		left: 50%;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 1.5;
+		color: $brand-red-dark;
+		font-family: $font-secondary;
+	}
+	
+	@include media('<tablet') {
+		font-size: 38px;
+		margin: 0 0 40px;
+		
+		span{
+			font-size: 21px;
+			left: 0;
+			text-align: center;
+		}
+	}
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+a {
+	color: $base-link-color;
+	text-decoration: none;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: $brand-red-dark;
+		text-decoration: none;
+	}
+}
+
+.btn,
+.btn span{
+	@extend %inline-block;
+	
+	font-size: 16px;
+	padding: 0;
+	border-radius: 0;
+	position: relative;
+	outline: none !important;
+	
+	&:after,
+	&:before{
+		@include size(9px);
+		@include position(absolute, $top:0, $right:0);
+		@include animate(all, $animation-speed, ease-out);
+
+		content: '';
+		border: 1px solid $brand-light-yellow;
+		border-width: 1px 1px 0 0;
+	}
+	&:after{
+		top: auto;
+		bottom: 0;
+		border-width: 0 1px 1px 0;
+	}
+}
+.btn {
+	background: none;
+	border: none;
+	color: $brand-black;
+	@include animate(all, $animation-speed, ease-out);
+
+	span{
+		padding: 10px 30px;
+		
+		&:after,
+		&:before{
+			right: auto;
+			left: 0;
+			border-width: 1px 0 0 1px;
+		}
+		&:after{
+			border-width: 0 0 1px 1px;
+		}
+	}
+
+	&:hover {
+		color: $brand-light-yellow !important;
+
+		&:before,
+		&:after,
+		span:before,
+		span:after{
+			@include size(100%);
+		}
+	}
+}

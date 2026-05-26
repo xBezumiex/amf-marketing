@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Title -->
+	<title>Creative Studio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Meta tags -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Custom fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,900" rel="stylesheet">
+
+	<!-- Carousel -->
+	<link rel="stylesheet" href="css/slick.css">
+	
+	<!-- Custom Scroll -->
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	
+	<!-- Theme style -->
+	<link rel="stylesheet" href="css/style.css">
+<style>
+	/* Cookie Banner */
+	#cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: #1c1c1c; color: #ddd; z-index: 99999; padding: 16px 20px; font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 1.6; box-shadow: 0 -4px 20px rgba(0,0,0,.4); transform: translateY(100%); transition: transform .4s ease; }
+	#cookie-banner.cookie--show { transform: translateY(0); }
+	.cookie-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+	.cookie-text { flex: 1; min-width: 200px; }
+	.cookie-text a { color: #b7780e; text-decoration: underline; }
+	.cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
+	.cookie-btn-ok { background: #b7780e; color: #fff; border: none; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; border-radius: 4px; }
+	.cookie-btn-ok:hover { background: #9a6409; }
+	.cookie-btn-no { background: transparent; color: #aaa; border: 1px solid #555; padding: 10px 24px; font-family: 'Raleway',sans-serif; font-size: 14px; cursor: pointer; border-radius: 4px; }
+	.cookie-btn-no:hover { color: #fff; border-color: #999; }
+	@media (max-width: 600px) { .cookie-inner { flex-direction: column; } .cookie-btns { width: 100%; } .cookie-btn-ok, .cookie-btn-no { flex: 1; text-align: center; min-height: 44px; } }
+</style>
+</head>
+<body>
+<!-- Cookie Banner -->
+<div id="cookie-banner" role="dialog" aria-label="Уведомление о cookies">
+	<div class="cookie-inner">
+		<p class="cookie-text">Мы используем cookies и сервисы аналитики, в том числе Яндекс.Метрику, чтобы улучшать работу сайта. Продолжая пользоваться сайтом или нажимая «Согласен», вы соглашаетесь с использованием cookies. Подробнее — в <a href="/privacy.html">Политике конфиденциальности</a>.</p>
+		<div class="cookie-btns">
+			<button class="cookie-btn-ok" id="cookie-accept">Согласен</button>
+			<button class="cookie-btn-no" id="cookie-decline">Отказаться</button>
+		</div>
+	</div>
+</div>
+
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<div class="container">
+				<nav class="main-navigation">
+					<strong class="navbar-brand" href="#"><a href="#"><img src="http://placehold.it/79x69" width="79" alt="Logo"></a></strong>
+					<a href="#" class="nav-opener"><span></span></a>
+					<div class="drop-down">
+						<ul>
+							<li><a href="#">Main</a></li>
+							<li><a href="#">We Have</a></li>
+							<li><a href="#">We put life</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Our history</a></li>
+							<li><a href="#">Prices</a></li>
+							<li><a href="#">Our team</a></li>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Our clients say</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 404 -->
+		<section class="section page-404 frame-box">
+			<div class="container">
+				<span class="sub-title">error</span>
+				<h1>404</h1>
+				<a href="#" class="btn"><span>Come back</span></a>
+			</div>
+		</section>
+	</div>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- ProgressBar -->
+	<script src="js/progressbar.min.js"></script>
+	
+	<!-- Portfolio -->
+	<script src="js/jquery.shuffle.min.js"></script>
+
+	<!-- Carousel -->
+	<script src="js/slick.min.js"></script>
+
+	<!-- Custom Scroll -->
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	
+	<!-- Custom Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAd0n1UX861dRqzyo3DLd_AOfmHXNpw6P0"></script>
+
+	<!-- Custom JS -->
+	<script src="js/jquery.main.min.js"></script>
+
+<!-- Cookie Banner -->
+<script>
+(function () {
+	var KEY = 'amf_cookie_choice';
+	var banner = document.getElementById('cookie-banner');
+	function getChoice() { return localStorage.getItem(KEY); }
+	function saveChoice(val) {
+		localStorage.setItem(KEY, val);
+		var d = new Date(); d.setTime(d.getTime() + 365*24*60*60*1000);
+		document.cookie = KEY + '=' + val + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+	}
+	function showBanner() { setTimeout(function(){ banner.classList.add('cookie--show'); }, 800); }
+	function hideBanner() { banner.classList.remove('cookie--show'); }
+	if (!getChoice()) showBanner();
+	document.getElementById('cookie-accept').addEventListener('click', function(){ saveChoice('accepted'); hideBanner(); });
+	document.getElementById('cookie-decline').addEventListener('click', function(){ saveChoice('declined'); hideBanner(); });
+})();
+</script>
+</body>
+</html>
